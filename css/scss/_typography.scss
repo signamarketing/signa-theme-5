@@ -1,47 +1,49 @@
-@font-face {
-  font-family: 'proximanova';
-  src: url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Regular_webfont.eot'),
-  url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Regular_webfont.ttf'),
-  url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Regular_webfont.svg');
-  font-weight: normal;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'proximanova';
+//   src: url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Regular_webfont.eot'),
+//   url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Regular_webfont.ttf'),
+//   url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Regular_webfont.svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
 
-@font-face {
-  font-family: 'proximanova';
-  src: url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Semibold_webfont.eot'),
-  url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Semibold_webfont.woff2'),
-  url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Semibold_webfont.woff'),
-  url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Semibold_webfont.ttf'),
-  url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Semibold_webfont.svg');
-  font-weight: 500;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'proximanova';
+//   src: url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Semibold_webfont.eot'),
+//   url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Semibold_webfont.woff2'),
+//   url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Semibold_webfont.woff'),
+//   url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Semibold_webfont.ttf'),
+//   url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Semibold_webfont.svg');
+//   font-weight: 500;
+//   font-style: normal;
+// }
 
-@font-face {
-  font-family: 'proximanova';
-  src: url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Bold_webfont.eot'),
-  url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Bold_webfont.woff2'),
-  url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Bold_webfont.woff'),
-  url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Bold_webfont.ttf'),
-  url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Bold_webfont.svg');
-  font-weight: bold;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'proximanova';
+//   src: url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Bold_webfont.eot'),
+//   url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Bold_webfont.woff2'),
+//   url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Bold_webfont.woff'),
+//   url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Bold_webfont.ttf'),
+//   url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Bold_webfont.svg');
+//   font-weight: bold;
+//   font-style: normal;
+// }
 
 p {margin-bottom: .9em; font-size:18px;}
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   // margin: 2.75rem 0 .7rem;
-  font-family: 'proximanova';
   font-weight: bold;
 }
 //Typography
 html, .root {
   font-size: 18px;
   line-height: 23px;
+  font-family: 'Montserrat', sans-serif;
 }
-
+body{
+  font-family: 'Montserrat' !important;
+}
 h1, .h1 {
   font-size: 50px;
   line-height: 50px;

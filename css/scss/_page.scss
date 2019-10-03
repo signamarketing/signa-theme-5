@@ -1,7 +1,6 @@
 html {font-size: 20px;overflow-x:hidden;}
 
 body {
-  font-family: 'proximanova';
   background-color: white;
   font-weight: 400;
   line-height: 1.45;
@@ -17,7 +16,6 @@ body {
 .page-template-page-no-sidebar-php article {
   min-height: calc(100vh - 607px);
 }
-
 
 .p-60 {
   padding-top:30px;
@@ -125,40 +123,12 @@ a {cursor:pointer;}
 
 @media (min-width:768px){
   .nav-top{padding-top:15px;}
-  .bg-hero {
-    height: calc(100vh - 238px);
-    min-height: 609px;
-  }
 }
-.bg-hero {
-  // background-image: url(http://ln2-cabinets.local/wp-content/uploads/2019/03/hero-image@2x.jpg);
-  background-size: cover;
-  background-position: center;
-}
+
 @media (min-width: 700px) {
 
 }
-#hero{
-  color:#fff;
-}
-#hero .container {position:relative;}
-#hero .container, #hero .row {
-  height:100%;
-}
 
-
-#hero h1 {
-  margin-top: 0px;
-  margin-bottom: 20px;
-}
-.hero-title-margin-bottom {
-  margin-bottom: 10px;
-}
-
-
-#hero p {
-  font-size:20px;
-}
 
 
 

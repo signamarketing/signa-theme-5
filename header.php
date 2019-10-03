@@ -21,6 +21,7 @@
   <link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png?1=; ?>">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Kalam:700|Montserrat:400,700&display=swap" rel="stylesheet">
   <?php wp_head(); ?>
 
 </head>
@@ -28,10 +29,12 @@
 <body <?php body_class(); ?>>
   <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'start-theme' ); ?></a>
-
-      <!-- Navbar Selection-->
-  <?php
-      get_template_part( 'template-parts/content-navbar-2' );
-  ?>
-
+    <!-- Top Bar - Text & CTA -->
+    <?php
+      get_template_part( 'template-parts/content-top-bar' );
+    ?>
+    <!-- Navbar -->
+    <?php
+      get_template_part( 'template-parts/content-navbar-populate_roles_210()' );
+    ?>
     <div id="content" class="site-content">
