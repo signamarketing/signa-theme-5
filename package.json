@@ -1,0 +1,28 @@
+{
+  "name": "starter-theme",
+  "version": "1.0.0",
+  "description": "Signa Marketing WordPress Bootstrap SASS starter theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/signamarketing/Signa-Starter-2019.git"
+  },
+  "author": "signamarketing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/signamarketing/Signa-Starter-2019/issues"
+  },
+  "homepage": "https://github.com/signamarketing/Signa-Starter-2019#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.11.0"
+  },
+  "dependencies": {}
+}

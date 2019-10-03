@@ -1,0 +1,39 @@
+.gallery .row {padding-left:10px;padding-right:10px;}
+.gallery-item img {
+    max-width: 100%;
+}
+.gallery .col-12 {
+    padding: 5px;
+}
+#lightcase-info #lightcase-caption {display:none !important;}
+
+.gallery-item a {
+  position: relative;
+  height: 100%;
+  display: block;
+}
+.gallery-item a:before {
+  content: "";
+  padding-top: 100%;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.018);
+  z-index: 1;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.gallery-item a:hover:before {
+  background-color: rgba(0,0,0,0.4);
+}
+
+
+// To Appear over tawk.to icon
+#lightcase-overlay, #lightcase-loading,  #lightcase-loading:focus, #lightcase-case, a.lightcase-icon-close, div#lightcase-nav a {
+  z-index: 9999999999 !important;
+}

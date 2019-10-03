@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'proximanova';
+  src: url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Regular_webfont.eot'),
+  url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Regular_webfont.ttf'),
+  url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Regular_webfont.svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proximanova';
+  src: url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Semibold_webfont.eot'),
+  url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Semibold_webfont.woff2'),
+  url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Semibold_webfont.woff'),
+  url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Semibold_webfont.ttf'),
+  url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Semibold_webfont.svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proximanova';
+  src: url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Bold_webfont.eot'),
+  url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Bold_webfont.woff2'),
+  url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Bold_webfont.woff'),
+  url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Bold_webfont.ttf'),
+  url('/wp-content/themes/signa-theme-5/fonts/Mark_Simonson_Proxima_Nova_Alt_Bold_webfont.svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+p {margin-bottom: .9em; font-size:18px;}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  // margin: 2.75rem 0 .7rem;
+  font-family: 'proximanova';
+  font-weight: bold;
+}
+//Typography
+html, .root {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+h1, .h1 {
+  font-size: 50px;
+  line-height: 50px;
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+h2, .h2 {
+  font-size: 35px;
+  line-height: 35px;
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+h3, .h3 {
+  font-size: 29px;
+  line-height: 46px;
+  margin-top: 23px;
+  margin-bottom: 10px;
+}
+h4, .h4 {
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: 23px;
+  margin-bottom: 10px;
+}
+h5, .h5 {
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: 23px;
+  margin-bottom: 10px;
+}
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0px;
+  margin-bottom: 23px;
+}
+li{
+  margin-bottom: 10px;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}

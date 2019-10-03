@@ -1,0 +1,162 @@
+//Services Section
+.intro-block {
+    position: relative;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 18px rgba(0,0,0,.03);
+    box-shadow: 0 0 18px rgba(0,0,0,.03);
+    box-sizing: border-box;
+    transition: 225ms;
+    overflow: hidden;
+    display: block;
+    background-color: $white;
+}
+.intro-block .block-text {
+    overflow: hidden;
+    padding: 33px 26px 20px 150px;
+}
+.block-icon {
+    display: flex;
+    position: relative;
+}
+.block-icon img {
+    width: 35px;
+    position: absolute;
+    /* top: 0px; */
+    bottom: 0px;
+    left: 0px;
+}
+.intro-block .block-text h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 0px;
+    line-height: 1;
+    // padding-left: 45px;
+}
+a.intro-block {
+    text-decoration: none;
+    color: inherit;
+    transition: color .3s;
+    outline: none;
+  }
+  .intro-block .block-text p:nth-child(2) {
+    overflow: hidden;
+    margin-top:16px;
+    font-size:18px;
+  }
+  .intro-block .block-text p.read-more {
+    color: $blue;
+    font-size:16px;
+  }
+  .intro-block:hover {
+    // transform: scale(1.03, 1.02);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  .intro-block:hover h3 {
+    color:initial;
+  }
+  .intro-block:hover p:nth-child(2){
+    color:initial;
+  }
+  .services-section-mb {
+      margin-bottom:50px;
+  }
+  .image-block .block-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    // width: 130px;
+    width:130px;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
+@media (min-width:786px) {
+    .intro-block {
+        margin-bottom: 30px;
+      }
+      .image-block .block-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        // width: 130px;
+        width:30%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+      }
+      .intro-block .block-text {
+        overflow: hidden;
+        padding: 33px 26px 20px 33%;
+    }
+    .intro-block .block-text p:nth-child(2) {
+        min-height: 90px;
+    }
+
+ 
+ 
+
+
+
+}
+
+// TRUSTED COMPANY SECTION
+.trusted-company-title {
+    font-size:24px;
+    font-weight:bold;
+    // margin-bottom:40px;
+}
+
+
+
+
+
+
+//instafetch grid
+#instafetch {
+  width: 100%;
+  padding: 50px 0px;
+  display: flex;
+
+  article {
+    display: inline-block;
+    vertical-align: top;
+    flex-grow: 1;
+    margin-right: 25px;
+
+    &:last-of-type {
+      margin-right: 0px;
+    }
+
+    figure {
+      position: relative;
+      width: 100%;
+      padding-top: 100%;
+      overflow: hidden;
+      margin: 0px;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+//instafetch mobile 
+@media(max-width: 768px) {
+  #instafetch {
+    display: block;
+    padding: 50px 0px;
+
+    article {
+    display: initial;
+    }
+  }
+}

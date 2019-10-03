@@ -1,0 +1,26 @@
+section.team-members {
+  padding-top:60px;
+  padding-bottom:35px;
+}
+.team-member-title-wrapper {
+  border: 1px solid #8e8e8e;
+  padding: 22px;
+  margin-top: -75px;
+  position: relative;
+  z-index: 1;
+  background: #Fff;
+}
+.team-member-wrapper {
+  width: 239px;
+  max-width: 100%;
+  margin: auto;
+}
+.team-member-title-wrapper p {
+  font-size: 24px;
+  font-weight: bold;
+}
+.team-member-title-wrapper span {
+  font-size: 16px;
+  margin-top: 2px;
+  display: block;
+}
