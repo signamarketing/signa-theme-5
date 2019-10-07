@@ -29,7 +29,7 @@
 //   font-style: normal;
 // }
 
-p {margin-bottom: .9em; font-size:18px;}
+p {margin-bottom: .9em; font-size:16px;}
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   // margin: 2.75rem 0 .7rem;
@@ -54,13 +54,13 @@ h2, .h2 {
   font-size: 35px;
   line-height: 35px;
   margin-top: 23px;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
 }
 h3, .h3 {
-  font-size: 29px;
-  line-height: 46px;
+  font-size: 24px;
+  // line-height: 41px;
   margin-top: 23px;
-  margin-bottom: 10px;
+  margin-bottom: 23px;
 }
 h4, .h4 {
   font-size: 18px;
@@ -84,4 +84,7 @@ li{
 ul ul, ol ol, ul ol, ol ul {
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.text-blue {
+  color: $blue !important;
 }

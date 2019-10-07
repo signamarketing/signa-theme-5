@@ -1,0 +1,25 @@
+.service-box-bg-filter{
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100%;
+  background-color:rgba(26,116,158,.7);
+}
+.service-box{
+  position:relative;
+  padding:30px 30px 35px;
+  background-size:cover;
+  p, h2, a{
+    z-index:1;
+    position:relative;
+  }
+  p {min-height:134px;}
+
+}
+
+.mid-page-cta{
+  a{
+    font-size:30px;
+  }
+}

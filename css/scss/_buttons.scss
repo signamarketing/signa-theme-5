@@ -8,7 +8,7 @@
   background-color:$blue;
   color: $white !important;
   display: inline-block;
-  padding: 12px 36px;
+  padding: 9px 36px;
   border: 0px;
   min-width: 200px;
   position: relative;
@@ -17,10 +17,10 @@
   text-align:center;
   border-radius:5px;
   letter-spacing: 1px;
-  font-weight:500;
+  font-weight:bold;
 }
 .nav-collapse .nav-top ul.nav>li:last-child a {
-  padding: 12px 16px;
+  padding: 9px 16px;
 }
 @media (min-width:992px) {
   max-width:100%;
@@ -55,7 +55,7 @@
   top: 180%;
   width: 160%;
   height: 190%;
-  background-color: $dark-blue;
+  background-color: $blue;
   border-radius: 50%;
   display: block;
   transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
@@ -92,11 +92,12 @@
 }
 
 .btn-small {
-  padding: 7px 20px !important;
-  min-width: 100px !important;
-  font-size: 18px !important;
-  font-weight: 300 !important;
+  min-width: 174px !important;
+  font-size: 16px !important;
 }
 
+.btn.sharp {
+  border-radius:0px;
+}
 
 
