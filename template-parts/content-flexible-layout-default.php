@@ -4,9 +4,6 @@
 if( have_rows('main_content') ):
 ?>
 
-
-    
-
 <?php
 
      // loop through the rows of data
@@ -69,41 +66,42 @@ if( have_rows('main_content') ):
                 </div>
               </div>
             </div>
-          <section>
+          </section>
         <?
             endwhile;
           endif;
         elseif( get_row_layout() == 'testimonials_layout' ): 
 ?>
           <?php
-            $bg_img = the_sub_field('background_image');
+            $bg_img = get_sub_field('background_image');
           ?>
-          <section id="testimonials" class="testimonial-bg py-80 pt-0" style="
-          background-image:url('<?php echo $bg_img ?>');"
-          ">
+          <section id="testimonials" class="testimonial-bg py-80" style="background-image:url('<?php echo $bg_img; ?>');">
+            <div class="testimonial-bg-filter"></div>
             <div class="container">
 
               <div class="row">
-                <div class="col-12 mb-3 text-center d-flex justify-content-center testimonials-title align-items-center">
-                  <h2 class="my-0"><?php the_sub_field('title'); ?></h2>
+                <div class="col-12 text-center d-flex justify-content-center testimonials-title align-items-center">
+                  <h2 class="text-white text-uppercase"><?php the_sub_field('title'); ?></h2>
                 </div>
               </div>
               <?php
                 if( have_rows('testimonial') ):
+                  $count = 0;
               ?>
               <div class="row text-center"><!-- Start of Row -->
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="0">
-                  <div class="carousel-inner">
+                  <div class="carousel-inner text-white">
                     <?php
                       while ( have_rows('testimonial') ) : the_row();
                     ?>
-                    <div class="carousel-item active">
+                    <div class="carousel-item <?php if ($count==0) {echo "active"; } ?>">
                       <div class="">
                         <p class="card-text">“<?php the_sub_field('testimonial_text'); ?>”</p>
-                        <h4 class="card-title"><?php the_sub_field('name'); ?></h4>
+                        <h4 class="card-title font-weight-normal mb-0">- <?php the_sub_field('name'); ?></h4>
                       </div>
                     </div>
                     <?php
+                      $count++;
                       endwhile;
                     ?>
                     <!-- Check for more than one testimonial to display controls -->
@@ -120,7 +118,9 @@ if( have_rows('main_content') ):
                 </div> <!-- end of carousel-->
               </div> <!-- end of row -->
 
-              <?php ?>
+              <?php 
+                endif;
+              ?>
             </div> <!-- end of container -->
           </section>
 
