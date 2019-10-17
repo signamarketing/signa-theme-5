@@ -1663,11 +1663,14 @@ a.intro-block {
   right: 20px; }
 
 .carousel-control-prev-icon {
-  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"%3E%3Cpath d="M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z"/%3E%3C/svg%3E'); }
+  background-image: url("/wp-content/uploads/2019/10/white-chevron-arrow-left.png"); }
 
 .carousel-control-next-icon {
-  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"%3E%3Cpath d="M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z"/%3E%3C/svg%3E');
-  fill: #101820 !important; }
+  background-image: url("/wp-content/uploads/2019/10/white-chevron-arrow-right.png"); }
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 27px;
+  height: 43px; }
 
 #testimonials h2 {
   margin-bottom: 23px;
@@ -1687,7 +1690,8 @@ a.intro-block {
   background-color: rgba(0, 0, 0, 0.6); }
 
 #testimonials div#carouselExampleIndicators {
-  width: 100%; }
+  width: 100%;
+  min-height: 161px; }
 
 #testimonials .carousel-item {
   width: 806px;
@@ -1882,3 +1886,26 @@ section.team-members {
 
 .mid-page-cta a {
   font-size: 30px; }
+
+#service-area h2 {
+  margin-bottom: 40px;
+  margin-top: 0px; }
+
+#service-area.bg-img {
+  background-size: cover;
+  position: relative; }
+
+#service-area .bg-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); }
+
+#service-area p:last-child {
+  margin-bottom: 0px; }
+
+#service-area a:last-child {
+  margin-bottom: 0px; }

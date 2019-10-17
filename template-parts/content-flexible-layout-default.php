@@ -123,7 +123,161 @@ if( have_rows('main_content') ):
               ?>
             </div> <!-- end of container -->
           </section>
+        <?php
+          elseif( get_row_layout() == 'service_area_layout' ): 
+        ?>
+          <?php
+            $bg_img = get_sub_field('background_image');
+          ?>
+            <section id="service-area" class="bg-img py-80" style="background-image:url('<?php echo $bg_img; ?>');">
+                <div class="container">
+                  <div class="bg-filter"></div>
+                  <div class="row text-white">
+                    <div class="col-12 text-center d-flex justify-content-center testimonials-title align-items-center">
+                      <h2 class=" text-uppercase text-white"><?php the_sub_field('title'); ?></h2>
+                    </div>
 
+                    <?php
+                      if( have_rows('column_1') ):
+                    ?>
+                      <div class="col-md-3 text-center text-md-left">
+                        <?php
+                          while ( have_rows('column_1') ) : the_row();
+                        ?>   
+                        <?php
+                          if( have_rows('city') ):
+                            while ( have_rows('city') ) : the_row();
+                        ?>
+                          <?php
+                            $city_page_link = get_sub_field('link');
+                            $city_name = get_sub_field('city_name');
+                            if (get_sub_field('link')) :
+                              echo '<a href="'.$city_page_link.'" alt="link to '.$city_name.' page">'.$city_name.'</a>';
+                            else :
+                              echo '<p>'.$city_name.'</p>';
+                            endif;
+                          ?>
+                        <?php
+                            endwhile;
+                          endif;
+                        ?>
+                      
+                    <?php
+                        endwhile;
+                    ?>
+                    </div>
+                    <?php
+                      endif;
+                    ?>
+
+<?php
+                      if( have_rows('column_2') ):
+                    ?>
+                      <div class="col-md-3 text-center text-md-left">
+                        <?php
+                          while ( have_rows('column_2') ) : the_row();
+                        ?>   
+                        <?php
+                          if( have_rows('city') ):
+                            while ( have_rows('city') ) : the_row();
+                        ?>
+                          <?php
+                            $city_page_link = get_sub_field('link');
+                            $city_name = get_sub_field('city_name');
+                            if (get_sub_field('link')) :
+                              echo '<a href="'.$city_page_link.'" alt="link to '.$city_name.' page">'.$city_name.'</a>';
+                            else :
+                              echo '<p>'.$city_name.'</p>';
+                            endif;
+                          ?>
+                        <?php
+                            endwhile;
+                          endif;
+                        ?>
+                      
+                    <?php
+                        endwhile;
+                    ?>
+                    </div>
+                    <?php
+                      endif;
+                    ?>
+
+<?php
+                      if( have_rows('column_3') ):
+                    ?>
+                      <div class="col-md-3 text-center text-md-left">
+                        <?php
+                          while ( have_rows('column_3') ) : the_row();
+                        ?>   
+                        <?php
+                          if( have_rows('city') ):
+                            while ( have_rows('city') ) : the_row();
+                        ?>
+                          <?php
+                            $city_page_link = get_sub_field('link');
+                            $city_name = get_sub_field('city_name');
+                            if (get_sub_field('link')) :
+                              echo '<a href="'.$city_page_link.'" alt="link to '.$city_name.' page">'.$city_name.'</a>';
+                            else :
+                              echo '<p>'.$city_name.'</p>';
+                            endif;
+                          ?>
+                        <?php
+                            endwhile;
+                          endif;
+                        ?>
+                      
+                    <?php
+                        endwhile;
+                    ?>
+                    </div>
+                    <?php
+                      endif;
+                    ?>
+
+
+<?php
+                      if( have_rows('column_4') ):
+                    ?>
+                      <div class="col-md-3 text-center text-md-left">
+                        <?php
+                          while ( have_rows('column_4') ) : the_row();
+                        ?>   
+                        <?php
+                          if( have_rows('city') ):
+                            while ( have_rows('city') ) : the_row();
+                        ?>
+                          <?php
+                            $city_page_link = get_sub_field('link');
+                            $city_name = get_sub_field('city_name');
+                            if (get_sub_field('link')) :
+                              echo '<a href="'.$city_page_link.'" alt="link to '.$city_name.' page">'.$city_name.'</a>';
+                            else :
+                              echo "<p>".$city_name."</p>";
+                            endif;
+                          ?>
+                        <?php
+                            endwhile;
+                          endif;
+                        ?>
+                      
+                    <?php
+                        endwhile;
+                    ?>
+                    </div>
+                    <?php
+                      endif;
+                    ?>
+
+                  </div><!-- END OF ROW -->
+
+                </div>
+              </div>
+            </section>
+
+
+          
 <?php
         endif;
     endwhile;
