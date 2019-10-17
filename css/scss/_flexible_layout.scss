@@ -77,3 +77,113 @@
   }
 
 }
+
+.company-logos-section {
+
+  .company-logo-title {
+    margin-bottom:33px;
+  }
+}
+
+
+// COUPON SECTION
+.coupons-section {
+  .col-md-6 {
+    margin-bottom:30px;
+  }
+
+  .coupon {
+    color: $blue;
+    border: 5px dashed #007CC0;
+    padding: 25px 1px 40px;
+    height: 100%;
+    position: relative;
+    
+    .coupon-text{
+      min-height:64px;
+      // padding:0px 20px;
+      padding: 0px 10px 10px; 
+
+      .title{
+        font-weight:bold;
+        font-size:32px;
+        line-height: 1;
+      }
+      .subtitle{
+        font-size:32px;
+        line-height:1;
+      }
+    }
+
+    .coupon-discount{
+      padding: 0px 14px;
+      
+      .percent-sign {
+        font-size:48px;
+        line-height:1;
+        font-weight:700;
+        margin-top: 15px;
+        // position:absolute;
+        // top:0;
+        // right:-30px;
+      }
+
+      .percent-text {
+        font-size:26px;
+        line-height:1.1;
+        text-align:left;
+        margin-top:15px;
+        margin-left: 6px;
+      }
+
+      .dollar-sign{
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 1;
+
+      }
+  
+      .number{
+        font-weight:bold;
+        font-size:120px;
+        font-size: 120px;
+        line-height: 1;
+        margin-bottom: 0px;
+        position:relative;
+      }
+  
+      .text{
+        font-size:26px;
+        line-height:1.1;
+        text-align:left;
+        align-items: flex-end;
+        display: flex;
+        margin-bottom: 17px;
+      }
+    }
+
+    .coupon-cta{
+      background-color:$blue;
+      color: $white;
+      padding: 6px 26px;
+      position: absolute;
+      bottom: 1px;
+      left: 1px;
+      right: 1px;
+
+      .coupon-cta-text{
+        font-size:15px;
+        margin-bottom:0px;
+        line-height:1;
+      }
+  
+      img{
+        height:21px;
+        width:auto;
+      }
+    }
+  }
+
+  
+
+}

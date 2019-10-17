@@ -1901,3 +1901,72 @@ section.team-members {
     font-size: 30px;
     align-items: center;
     display: inline-flex; }
+
+.company-logos-section .company-logo-title {
+  margin-bottom: 33px; }
+
+.coupons-section .col-md-6 {
+  margin-bottom: 30px; }
+
+.coupons-section .coupon {
+  color: #0088c5;
+  border: 5px dashed #007CC0;
+  padding: 25px 1px 40px;
+  height: 100%;
+  position: relative; }
+  .coupons-section .coupon .coupon-text {
+    min-height: 64px;
+    padding: 0px 10px 10px; }
+    .coupons-section .coupon .coupon-text .title {
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 1; }
+    .coupons-section .coupon .coupon-text .subtitle {
+      font-size: 32px;
+      line-height: 1; }
+  .coupons-section .coupon .coupon-discount {
+    padding: 0px 14px; }
+    .coupons-section .coupon .coupon-discount .percent-sign {
+      font-size: 48px;
+      line-height: 1;
+      font-weight: 700;
+      margin-top: 15px; }
+    .coupons-section .coupon .coupon-discount .percent-text {
+      font-size: 26px;
+      line-height: 1.1;
+      text-align: left;
+      margin-top: 15px;
+      margin-left: 6px; }
+    .coupons-section .coupon .coupon-discount .dollar-sign {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 1; }
+    .coupons-section .coupon .coupon-discount .number {
+      font-weight: bold;
+      font-size: 120px;
+      font-size: 120px;
+      line-height: 1;
+      margin-bottom: 0px;
+      position: relative; }
+    .coupons-section .coupon .coupon-discount .text {
+      font-size: 26px;
+      line-height: 1.1;
+      text-align: left;
+      align-items: flex-end;
+      display: flex;
+      margin-bottom: 17px; }
+  .coupons-section .coupon .coupon-cta {
+    background-color: #0088c5;
+    color: #fff;
+    padding: 6px 26px;
+    position: absolute;
+    bottom: 1px;
+    left: 1px;
+    right: 1px; }
+    .coupons-section .coupon .coupon-cta .coupon-cta-text {
+      font-size: 15px;
+      margin-bottom: 0px;
+      line-height: 1; }
+    .coupons-section .coupon .coupon-cta img {
+      height: 21px;
+      width: auto; }

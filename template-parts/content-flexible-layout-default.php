@@ -356,39 +356,102 @@ if( have_rows('main_content') ):
           endif;
         ?>
 
-
         <?php
-          //vars
-          $companies = get_field('trusted_companies_section');
+          elseif( get_row_layout() == 'company_logos_section' ): 
         ?>
-          <section class="p-80 bg-blue">
-            <div class="container">
-              <div class="row">
-                <div class="col-12 text-center">
-                  <p class="trusted-company-title h3 mt-0 title-margin"><?php echo $companies['section_title']; ?></p>
+            <section class="py-80 company-logos-section">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 text-center">
+                    <p class="company-logo-title h2 mt-0 title-margin"><?php the_sub_field('title'); ?></p>
+                  </div>
+                  <?php
+                    if( have_rows('logos') ):
+                      while( have_rows('logos') ): the_row();
+                  ?>
+                    <div class="trusted-company-img" style="margin:auto;">
+                      <?php
+                        $image = get_sub_field('image');
+                        $url = $image['url'];
+                        $alt = $image['alt'];
+                      ?>
+                      <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>">
+                    </div>
+                  <?php      
+                      endwhile;
+                    endif;
+                  ?>
                 </div>
-                <?php
-                  if( have_rows('trusted_companies_section') ):
-                    while( have_rows('trusted_companies_section') ): the_row();
-
-                      if ( have_rows( 'images_section' ) ) : 
-                        while ( have_rows( 'images_section' ) ) : the_row();
-                ?>
-                          <div class="trusted-company-img" style="margin:auto;">
-                            <img src="<?php echo the_sub_field('image');?>">
-                          </div>
-                <?php      
-                        endwhile;
-                      endif;
-
-                    endwhile;
-                  endif;
-                ?>
               </div>
-            </div>
-          </section>
+            </section>
+          <?php
+            elseif( get_row_layout() == 'coupons_layout' ): 
+          ?>
+            <?php
+              $coupon_cta_text = get_sub_field('coupon_cta');
+              $image = get_sub_field('coupon_logo');
+              $url = $image['url'];
+              $alt = $image['alt'];
+            ?>
+            <section class="py-80 coupons-section">
+              <div class="container">
+                <div class="row">
+                  <?php
+                    if( have_rows('coupon') ):
+                      while( have_rows('coupon') ): the_row();
+                  ?>
+                    <div class="col-md-6 col-lg-4 text-center">
+                      <div class="coupon">
+                        <div class="coupon-text">
+                          <p class="title mb-0"><?php the_sub_field('title'); ?></p>
+                          <?php
+                            if(get_sub_field('subtitle')):
+                              echo '<p class="subtitle mb-0">'.get_sub_field('subtitle')."</p>";
+                            endif;
+                          ?>
+                        </div>
+                        <?php
+                          if( get_sub_field('coupon_discount_type') == 'Percent' ):
+                        ?>
+                          <div class="coupon-discount d-flex justify-content-center">
+                            <p class="number"><?php the_sub_field('coupon_discount'); ?></p>
+                            <span class="percent-sign">%</span>
+                            <span class="percent-text"><?php the_sub_field('coupon_discount_text'); ?></span>
+                            <!-- <p class="text"></p> -->
+                          </div>
+                        <?php
+                          
+                        ?>
+                        <?php
+                          endif;
+                          if( get_sub_field('coupon_discount_type') == 'Flat Discount' ):
+                        ?>
+                          <div class="coupon-discount d-flex justify-content-center">
+                            <span class="dollar-sign">$</span>
+                            <p class="number"><?php the_sub_field('coupon_discount'); ?></p>
+                            <p class="text"><?php the_sub_field('coupon_discount_text'); ?></p>
+                          </div>
+                        <?php
+                          endif;
+                        ?>
 
-          
+                        <div class="coupon-cta d-flex justify-content-between align-items-center">
+                          <p class="coupon-cta-text text-white"><?php echo $coupon_cta_text; ?></p>
+                          <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>">
+                        </div>
+                      </div>
+                    </div>
+                  <?php      
+                      endwhile;
+                    endif;
+                  ?>
+                </div>
+              </div>
+            </section>
+            
+
+
+
 <?php
 // END OF FLEX LAYOUT ALL NEW LAYOUTS MUST BE ADDED ABOVE THIS LINE
         endif;
