@@ -35,6 +35,6 @@
     ?>
     <!-- Navbar -->
     <?php
-      get_template_part( 'template-parts/content-navbar-populate_roles_210()' );
+      get_template_part( 'template-parts/content-navbar-2' );
     ?>
     <div id="content" class="site-content">

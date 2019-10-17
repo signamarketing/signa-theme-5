@@ -801,16 +801,18 @@ div#intro-paragraph p:last-child {
 
 #top-bar {
   background-color: #1A5175; }
-  #top-bar p {
-    font-size: 20px; }
-  #top-bar a {
-    font-size: 20px; }
   #top-bar .topbar-tagline {
     font-family: 'Kalam', cursive; }
   #top-bar .phone-icon {
-    width: 20px;
     margin-left: 10px;
-    margin-right: 2px; }
+    margin-right: 2px;
+    width: 20px; }
+  @media (min-width: 768px) {
+    #top-bar p, #top-bar a {
+      font-size: 16px; } }
+  @media (min-width: 992px) {
+    #top-bar p, #top-bar a {
+      font-size: 20px; } }
 
 .navbar {
   background: #fff; }
@@ -838,8 +840,6 @@ div#intro-paragraph p:last-child {
     padding-right: 0px; }
   .nav-collapse .nav-top ul.nav > li a:hover {
     background-color: #fff !important; }
-  .nav-collapse .nav-top ul.nav > li:last-child a:hover {
-    background-color: #0088c5 !important; }
   .nav-collapse .nav-top ul.nav > li:last-child a {
     max-width: 310px; }
   ul.sub-menu:before {
@@ -1046,8 +1046,6 @@ button#open-nav {
     width: 100%;
     text-align: center;
     padding-bottom: 22px; }
-  .site-header {
-    min-height: 90px; }
   .brand {
     color: black; }
     .brand img {
@@ -1086,14 +1084,18 @@ button#open-nav {
         .nav-collapse .nav-top ul.nav li {
           display: flex;
           align-items: center;
-          padding: 0px 14px;
+          padding: 0px 30px;
           border-bottom: 0px; }
+          .nav-collapse .nav-top ul.nav li:first-child {
+            padding-left: 0px; }
+          .nav-collapse .nav-top ul.nav li:last-child {
+            padding-right: 0px; }
           .nav-collapse .nav-top ul.nav li.active a {
             color: #f7941d; }
           .nav-collapse .nav-top ul.nav li a {
             font-size: 16px;
             border: 0px;
-            color: #101820;
+            color: #1A5175;
             text-align: right;
             padding: 0px;
             font-weight: 300; }
@@ -1188,9 +1190,6 @@ div#neil-logo {
 @media (max-width: 992px) {
   .nav-cta {
     display: none; } }
-
-#navigation-top a:hover {
-  color: #0088c5; }
 
 .gform_body .gfield_label {
   display: none !important; }
@@ -1869,6 +1868,10 @@ section.team-members {
 .mid-page-cta .phone-icon {
   margin-right: 8px; }
 
+@media (max-width: 768px) {
+  #service-area .col-md-3 {
+    margin-bottom: 23px; } }
+
 #service-area h2 {
   margin-bottom: 40px;
   margin-top: 0px; }
@@ -1905,68 +1908,69 @@ section.team-members {
 .company-logos-section .company-logo-title {
   margin-bottom: 33px; }
 
-.coupons-section .col-md-6 {
-  margin-bottom: 30px; }
-
-.coupons-section .coupon {
-  color: #0088c5;
-  border: 5px dashed #007CC0;
-  padding: 25px 1px 40px;
-  height: 100%;
-  position: relative; }
-  .coupons-section .coupon .coupon-text {
-    min-height: 64px;
-    padding: 0px 10px 10px; }
-    .coupons-section .coupon .coupon-text .title {
-      font-weight: bold;
-      font-size: 32px;
-      line-height: 1; }
-    .coupons-section .coupon .coupon-text .subtitle {
-      font-size: 32px;
-      line-height: 1; }
-  .coupons-section .coupon .coupon-discount {
-    padding: 0px 14px; }
-    .coupons-section .coupon .coupon-discount .percent-sign {
-      font-size: 48px;
-      line-height: 1;
-      font-weight: 700;
-      margin-top: 15px; }
-    .coupons-section .coupon .coupon-discount .percent-text {
-      font-size: 26px;
-      line-height: 1.1;
-      text-align: left;
-      margin-top: 15px;
-      margin-left: 6px; }
-    .coupons-section .coupon .coupon-discount .dollar-sign {
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 1; }
-    .coupons-section .coupon .coupon-discount .number {
-      font-weight: bold;
-      font-size: 120px;
-      font-size: 120px;
-      line-height: 1;
-      margin-bottom: 0px;
-      position: relative; }
-    .coupons-section .coupon .coupon-discount .text {
-      font-size: 26px;
-      line-height: 1.1;
-      text-align: left;
-      align-items: flex-end;
-      display: flex;
-      margin-bottom: 17px; }
-  .coupons-section .coupon .coupon-cta {
-    background-color: #0088c5;
-    color: #fff;
-    padding: 6px 26px;
-    position: absolute;
-    bottom: 1px;
-    left: 1px;
-    right: 1px; }
-    .coupons-section .coupon .coupon-cta .coupon-cta-text {
-      font-size: 15px;
-      margin-bottom: 0px;
-      line-height: 1; }
-    .coupons-section .coupon .coupon-cta img {
-      height: 21px;
-      width: auto; }
+.coupons-section {
+  padding-bottom: 50px; }
+  .coupons-section .col-md-6 {
+    margin-bottom: 30px; }
+  .coupons-section .coupon {
+    color: #0088c5;
+    border: 5px dashed #007CC0;
+    padding: 25px 1px 40px;
+    height: 100%;
+    position: relative; }
+    .coupons-section .coupon .coupon-text {
+      min-height: 64px;
+      padding: 0px 10px 10px; }
+      .coupons-section .coupon .coupon-text .title {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 1; }
+      .coupons-section .coupon .coupon-text .subtitle {
+        font-size: 32px;
+        line-height: 1; }
+    .coupons-section .coupon .coupon-discount {
+      padding: 0px 14px; }
+      .coupons-section .coupon .coupon-discount .percent-sign {
+        font-size: 48px;
+        line-height: 1;
+        font-weight: 700;
+        margin-top: 15px; }
+      .coupons-section .coupon .coupon-discount .percent-text {
+        font-size: 26px;
+        line-height: 1.1;
+        text-align: left;
+        margin-top: 15px;
+        margin-left: 6px; }
+      .coupons-section .coupon .coupon-discount .dollar-sign {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 1; }
+      .coupons-section .coupon .coupon-discount .number {
+        font-weight: bold;
+        font-size: 120px;
+        font-size: 120px;
+        line-height: 1;
+        margin-bottom: 0px;
+        position: relative; }
+      .coupons-section .coupon .coupon-discount .text {
+        font-size: 26px;
+        line-height: 1.1;
+        text-align: left;
+        align-items: flex-end;
+        display: flex;
+        margin-bottom: 17px; }
+    .coupons-section .coupon .coupon-cta {
+      background-color: #0088c5;
+      color: #fff;
+      padding: 6px 26px;
+      position: absolute;
+      bottom: 1px;
+      left: 1px;
+      right: 1px; }
+      .coupons-section .coupon .coupon-cta .coupon-cta-text {
+        font-size: 15px;
+        margin-bottom: 0px;
+        line-height: 1; }
+      .coupons-section .coupon .coupon-cta img {
+        height: 21px;
+        width: auto; }
