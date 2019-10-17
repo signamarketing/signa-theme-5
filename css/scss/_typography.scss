@@ -51,8 +51,8 @@ h1, .h1 {
   margin-bottom: 23px;
 }
 h2, .h2 {
-  font-size: 35px;
-  line-height: 35px;
+  font-size: 40px;
+  line-height: 40px;
   margin-top: 23px;
   margin-bottom: 21px;
 }
@@ -87,4 +87,7 @@ ul ul, ol ol, ul ol, ol ul {
 }
 .text-blue {
   color: $blue !important;
+}
+P:last-child {
+  margin-bottom: 0px;
 }

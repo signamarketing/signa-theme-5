@@ -21,6 +21,12 @@
 .mid-page-cta{
   a{
     font-size:30px;
+    align-items: center;
+    display: inline-flex;
+  }
+
+  .phone-icon {
+    margin-right: 8px;
   }
 }
 
@@ -54,4 +60,20 @@
   a:last-child {
     margin-bottom:0px;
   }
+}
+
+.two-column-cta {
+  background-color:$two-column-cta-bg;
+
+  .phone-icon {
+    width:30px;
+    margin-right:8px;
+  }
+
+  a{
+    font-size:30px;
+    align-items: center;
+    display: inline-flex;
+  }
+
 }

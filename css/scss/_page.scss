@@ -40,10 +40,6 @@ body {
     font-size: 60px;
     line-height: 60px;
   }
-  h2, .h2 {
-    font-size: 46px;
-    line-height: 46px;
-  }
   .p-60 {
     padding-top:60px;
     padding-bottom:60px;
@@ -140,12 +136,6 @@ a {cursor:pointer;}
   margin-bottom:50px;
 }
 
-@media (min-width:600px) {
-
-    #how-it-works h2 {
-      font-size: 40px;
-  }
-}
 @media (min-width:768px) {
     #how-it-works .row {
       margin-bottom: 100px;

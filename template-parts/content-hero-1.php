@@ -25,7 +25,7 @@ $hero = get_field('hero_section');
               $hero_btn = get_sub_field('hero_button');
           ?>
           <div class="col-12 offset-md-2 col-md-8 text-center">
-              <a href="<?php echo $hero_btn['hero_button_link']; ?>" class="btn white"><?php echo $hero_btn['hero_button_text']; ?></a>
+              <a href="<?php echo $hero_btn['hero_button_link']; ?>" class="btn btn-hero white"><?php echo $hero_btn['hero_button_text']; ?></a>
               </div>
           <?php      
               endwhile;
