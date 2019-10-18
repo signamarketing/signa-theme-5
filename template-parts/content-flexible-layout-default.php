@@ -11,7 +11,12 @@ if( have_rows('main_content') ):
 
         if( get_row_layout() == 'text_row' ):
         ?>
-          <section class="py-80">
+          <?php
+            if (get_sub_field('add_space_below') == 'No'){
+              $paddingClass="pb-0";
+            }
+          ?>
+          <section class="py-80 <?php echo $paddingClass; ?>">
             <div class="container">
               <div class="row">
                 <div class="col-12">
@@ -448,9 +453,40 @@ if( have_rows('main_content') ):
                 </div>
               </div>
             </section>
-            
-
-
+          <?php
+            elseif( get_row_layout() == '5050_text_and_image_layout_with_background_image_and_wave_options' ): 
+          ?>
+          <?php
+            $bg_img = get_sub_field('background_image');
+          ?>
+            <section class="wave-row py-80 bg-img" style="background-image:url('<?php echo $bg_img; ?>');">
+              <?php
+                if (get_sub_field('add_wave_above') == 'Yes'){
+                  echo '<img class="top-wave" alt="top-wave" src="http://signa-theme-5.local/wp-content/uploads/2019/10/inner-page-wave@2x-2.png">';
+                }
+              ?>
+              <div class="bg-filter"></div>
+              <div class="container alternating-page-layout">
+                <div class="row">
+                  <div class="col-md-6 order-2 order-md-1 text-white">
+                    <?php echo the_sub_field('text'); ?>
+                  </div>
+                  <div class="col-md-6 text-center text-md-right order-1 order-md-2 mb-4 mb-md-0">
+                    <?php
+                      $image = get_sub_field('image');
+                      $url = $image['url'];
+                      $alt = $image['alt'];
+                    ?>
+                    <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>">
+                  </div>
+                </div>
+              </div>
+              <?php
+                if (get_sub_field('add_wave_below') == 'Yes'){
+                  echo '<img class="bottom-wave" alt="top-wave" src="http://signa-theme-5.local/wp-content/uploads/2019/10/inner-page-wave@2x-2.png">';
+                }
+              ?>
+            </section>
 
 <?php
 // END OF FLEX LAYOUT ALL NEW LAYOUTS MUST BE ADDED ABOVE THIS LINE

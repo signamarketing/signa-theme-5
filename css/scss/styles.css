@@ -513,9 +513,6 @@ img {
 .alternating-page-layout .row:last-child {
   margin-bottom: 0px; }
 
-section#inner-page-title-header {
-  padding: 60px 0px; }
-
 .trusted-company-img {
   width: 50%;
   text-align: center;
@@ -524,10 +521,7 @@ section#inner-page-title-header {
 @media (min-width: 768px) {
   .trusted-company-img {
     width: auto;
-    margin: auto !important; }
-  section#inner-page-title-header {
-    max-height: 4200px;
-    height: 420px; } }
+    margin: auto !important; } }
 
 .cta-2-text {
   font-size: 35px; }
@@ -1842,6 +1836,18 @@ section.team-members {
   #ctf .ctf-item {
     width: 100%; } }
 
+.bg-img {
+  background-size: cover;
+  position: relative; }
+
+.bg-filter {
+  background-color: rgba(0, 0, 0, 0.28);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 .service-box-bg-filter {
   position: absolute;
   top: 0;
@@ -1974,3 +1980,19 @@ section.team-members {
       .coupons-section .coupon .coupon-cta img {
         height: 21px;
         width: auto; }
+
+.wave-row {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .wave-row .top-wave {
+    position: absolute;
+    left: 0;
+    top: -1px;
+    transform: scaleX(-1) scaleY(-1);
+    width: 100%;
+    z-index: 1; }
+  .wave-row .bottom-wave {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; }
