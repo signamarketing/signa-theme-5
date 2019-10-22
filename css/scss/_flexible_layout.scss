@@ -81,7 +81,7 @@
 }
 
 .two-column-cta {
-  background-color:$two-column-cta-bg;
+    background-color:$theme-color-1;
 
   .phone-icon {
     width:30px;
@@ -92,6 +92,31 @@
     font-size:30px;
     align-items: center;
     display: inline-flex;
+  }
+
+  &.theme-color {
+    background-color:$theme-color-1;
+
+    h3 {
+      color:$white;
+    }
+    a {
+      color:$theme-color-1;
+      background-color:$white;
+    }
+  }
+  
+  &.white{
+    background-color:$white;
+
+    h3 {
+      color:$theme-color-1;
+    }
+    a {
+      color:$white;
+      background-color:$theme-color-1;
+    }
+
   }
 
 }

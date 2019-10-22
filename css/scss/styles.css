@@ -1524,7 +1524,7 @@ a.intro-block {
 
 .btn.blue, .btn.white, .btn-hero.white {
   background-color: #0088c5;
-  color: #fff !important;
+  color: #fff;
   padding: 9px 23px;
   border: 0px;
   min-width: 200px;
@@ -1541,7 +1541,7 @@ a.intro-block {
 
 .btn.white {
   background-color: #fff;
-  color: #0088c5 !important; }
+  color: #0088c5; }
 
 .btn-hero.white:before {
   content: "";
@@ -1572,7 +1572,7 @@ a.intro-block {
   z-index: -1; }
 
 .btn-hero.white:hover {
-  color: #fff !important;
+  color: #fff;
   text-decoration: none; }
 
 .btn-hero.white:hover:before {
@@ -1910,6 +1910,20 @@ section.team-members {
     font-size: 30px;
     align-items: center;
     display: inline-flex; }
+  .two-column-cta.theme-color {
+    background-color: #0088c5; }
+    .two-column-cta.theme-color h3 {
+      color: #fff; }
+    .two-column-cta.theme-color a {
+      color: #0088c5;
+      background-color: #fff; }
+  .two-column-cta.white {
+    background-color: #fff; }
+    .two-column-cta.white h3 {
+      color: #0088c5; }
+    .two-column-cta.white a {
+      color: #fff;
+      background-color: #0088c5; }
 
 .company-logos-section .company-logo-title {
   margin-bottom: 33px; }
