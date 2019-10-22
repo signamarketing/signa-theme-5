@@ -37,9 +37,6 @@
     background-color: #fff !important;
   }
 
-  .nav-collapse .nav-top ul.nav>li:last-child a:hover {
-    background-color: $blue !important;
-  }
 
   .nav-collapse .nav-top ul.nav>li:last-child a {
     max-width: 310px;
@@ -313,9 +310,7 @@ button#open-nav {
     padding-bottom: 22px;
   }
 
-  .site-header {
-    min-height: 90px;
-  }
+
 
   .brand {
     color: black;
@@ -373,8 +368,16 @@ button#open-nav {
         li {
           display: flex;
           align-items: center;
-          padding: 0px 14px;
+          padding: 0px 30px;
           border-bottom: 0px;
+
+          &:first-child{
+            padding-left:0px;
+          }
+
+          &:last-child {
+            padding-right:0px;
+          }
 
           &.active a {
             color: $orange;
@@ -383,7 +386,7 @@ button#open-nav {
           a {
             font-size: 16px;
             border: 0px;
-            color: $black;
+            color: $dark-blue;
             text-align: right;
             padding: 0px;
             font-weight: 300;
@@ -394,6 +397,8 @@ button#open-nav {
 
           }
         }
+
+        
       }
     }
   }
@@ -527,6 +532,3 @@ div#neil-logo {
 }
 
 
-#navigation-top a:hover {
-  color: $blue;
-}

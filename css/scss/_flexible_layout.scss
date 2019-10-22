@@ -1,0 +1,405 @@
+.bg-img {
+  background-size: cover;
+  position: relative;
+}
+.bg-filter {
+  background-color:rgba(0,0,0,.28);
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+
+}
+.service-box-bg-filter{
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100%;
+  background-color:rgba(26,116,158,.7);
+}
+.service-box{
+  position:relative;
+  padding:30px 30px 35px;
+  background-size:cover;
+  p, h2, a{
+    z-index:1;
+    position:relative;
+  }
+  p {min-height:134px;}
+
+}
+
+.mid-page-cta{
+  a{
+    font-size:30px;
+    align-items: center;
+    display: inline-flex;
+  }
+
+  .phone-icon {
+    margin-right: 8px;
+  }
+}
+
+
+
+
+#service-area{
+  @media(max-width:768px){
+    .col-md-3 {
+      margin-bottom:23px;
+    }
+  }
+
+  h2 {
+    margin-bottom:40px;
+    margin-top:0px;
+  }
+
+  &.bg-img {
+    background-size:cover;
+    position:relative;
+  }
+  
+  .bg-filter {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,.6);
+  }
+  p:last-child {
+    margin-bottom:0px;
+  }
+  a{
+    color:$white;
+    margin-bottom:23px;
+    display:block;
+    text-decoration:underline;
+
+  }
+  a:last-child {
+    margin-bottom:0px;
+  }
+}
+
+.two-column-cta {
+    background-color:$theme-color-1;
+
+  .phone-icon {
+    width:30px;
+    margin-right:8px;
+  }
+
+  a{
+    font-size:30px;
+    align-items: center;
+    display: inline-flex;
+  }
+
+  &.theme-color {
+    background-color:$theme-color-1;
+
+    h3 {
+      color:$white;
+    }
+    a {
+      color:$theme-color-1;
+      background-color:$white;
+    }
+  }
+  
+  &.white{
+    background-color:$white;
+
+    h3 {
+      color:$theme-color-1;
+    }
+    a {
+      color:$white;
+      background-color:$theme-color-1;
+    }
+
+  }
+
+}
+
+.company-logos-section {
+
+  .company-logo-title {
+    margin-bottom:33px;
+  }
+}
+
+
+// COUPON SECTION
+.coupons-section {
+
+padding-bottom:50px;
+
+  .col-md-6 {
+    margin-bottom:30px;
+  }
+
+  .coupon {
+    color: $blue;
+    border: 5px dashed #007CC0;
+    padding: 25px 1px 40px;
+    height: 100%;
+    position: relative;
+    
+    .coupon-text{
+      min-height:64px;
+      // padding:0px 20px;
+      padding: 0px 10px 10px; 
+
+      .title{
+        font-weight:bold;
+        font-size:32px;
+        line-height: 1;
+      }
+      .subtitle{
+        font-size:32px;
+        line-height:1;
+      }
+    }
+
+    .coupon-discount{
+      padding: 0px 14px;
+      
+      .percent-sign {
+        font-size:48px;
+        line-height:1;
+        font-weight:700;
+        margin-top: 15px;
+        // position:absolute;
+        // top:0;
+        // right:-30px;
+      }
+
+      .percent-text {
+        font-size:26px;
+        line-height:1.1;
+        text-align:left;
+        margin-top:15px;
+        margin-left: 6px;
+      }
+
+      .dollar-sign{
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 1;
+
+      }
+  
+      .number{
+        font-weight:bold;
+        font-size:120px;
+        font-size: 120px;
+        line-height: 1;
+        margin-bottom: 0px;
+        position:relative;
+      }
+  
+      .text{
+        font-size:26px;
+        line-height:1.1;
+        text-align:left;
+        align-items: flex-end;
+        display: flex;
+        margin-bottom: 17px;
+      }
+    }
+
+    .coupon-cta{
+      background-color:$blue;
+      color: $white;
+      padding: 6px 26px;
+      position: absolute;
+      bottom: 1px;
+      left: 1px;
+      right: 1px;
+
+      .coupon-cta-text{
+        font-size:15px;
+        margin-bottom:0px;
+        line-height:1;
+      }
+  
+      img{
+        height:21px;
+        width:auto;
+      }
+    }
+  }
+}
+// END OF COUPON SECTION
+
+// START OF 50/50 WAVE ROW SECTION
+
+
+// END OF 50/50 WAVE ROW SECTION
+.wave-row {
+  padding-top:100px;
+  padding-bottom:100px;
+
+.top-wave{
+  position: absolute;
+  left: 0;
+  top: -1px;
+  transform: scaleX(-1) scaleY(-1);
+  width: 100%;
+  z-index: 1;
+}
+.bottom-wave {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+}
+
+.contact-form-row{
+  .contact-form {
+
+    .col-form-container {
+        background-color: $theme-color-2;
+        padding: 30px 25px 30px;
+
+        h2 {
+          color:$white;
+          margin-bottom: 30px;
+          font-size: 40px;
+          font-style: italic;
+          line-height:1.1;
+        }
+        div#gform_wrapper_1 {
+          width: 100%;
+          max-width: 100%;
+          margin:auto;
+        }
+        .gform_footer {
+          margin-top: 0px !important;
+        }
+        .gform_button {
+          padding: 11px 30px;
+          font-weight: bold;
+          font-size: 30px;
+          letter-spacing: 2px;
+          transition: all .3s;
+          border: none;
+          border-radius: 3px;
+          width: 100%;
+        }
+        .gform_button:hover {
+          text-decoration:none;
+          color:$theme-color-1;
+          background-color: $white;
+        }
+    }
+
+    @media(min-width:768px){
+      .col-form-container {
+        padding: 70px 25px 50px;
+        
+        div#gform_wrapper_1 {
+          width: 90%;
+        }
+
+        h2 {
+          margin-bottom: 70px;
+          font-size: 55px;
+        }
+      }
+    }
+
+    .ginput_container:before {
+      display: none;
+    }
+    ul, li {
+      list-style: none;
+      margin:0px !important;
+      padding:0px !important;
+    }
+    ul li.gfield:first-child {
+      margin-bottom:25px;
+    }
+    ::placeholder {
+      font-weight: 700;
+    }
+    input,textarea {
+      border:0px;
+      border: 0;
+      border-radius: 3px !important;
+      margin-bottom:25px;
+      width:100%;
+      padding: .6rem .6rem!important;
+    }
+    .nf-field-element input {
+      height: 56px !important;
+      padding-left: 20px;
+      font-weight: 700;
+      border-radius: 3px;
+      padding: 3px;
+      margin: 0;
+    }
+  }
+  @media(min-width:768px){
+    input, textarea {
+      padding: 15px 20px 15px!important;
+  
+    }
+  }
+  .image-with-text {
+    position:relative;
+    margin-bottom:25px;
+    max-width: 100%;
+
+    img {
+      width: 100%;
+    }
+
+    p {
+      color:$white;
+      position: absolute;
+      top: 47%;
+      margin: auto;
+      left: 0;
+      right: 0;
+      display: block;
+      color: #fff;
+      font-weight: 700;
+      font-size: 30px;
+      text-align: center;
+    }
+
+
+    }
+    @media(min-width:400px) {
+      .image-with-text {
+        max-width: 396px;
+
+        p{
+          font-size:40px;
+        }
+      }
+
+  }
+  .testimonial-card {
+    padding:25px;
+    border: 1px solid #f3f2f0;
+    margin-bottom:20px;
+    h3 {
+      margin-top:0px;
+      margin-bottom:0px;
+    }
+    &.colored-card-bg {
+      background-color:#f3f2f0;
+    }
+  }
+}

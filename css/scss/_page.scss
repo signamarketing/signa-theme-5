@@ -1,13 +1,13 @@
 html {font-size: 20px;overflow-x:hidden;}
 
 body {
-  font-family: 'proximanova';
   background-color: white;
   font-weight: 400;
   line-height: 1.45;
   color: $black;
   font-size: 18px;
   line-height: 23px;
+  font-weight:normal;
 }
 
 .vp-style-default .viba-portfolio-filter .vp-filter-button, .vp-style-default .viba-portfolio-filter a {
@@ -17,7 +17,6 @@ body {
 .page-template-page-no-sidebar-php article {
   min-height: calc(100vh - 607px);
 }
-
 
 .p-60 {
   padding-top:30px;
@@ -40,10 +39,6 @@ body {
   h1, .h1 {
     font-size: 60px;
     line-height: 60px;
-  }
-  h2, .h2 {
-    font-size: 46px;
-    line-height: 46px;
   }
   .p-60 {
     padding-top:60px;
@@ -91,9 +86,7 @@ margin-bottom:80px;
   margin-bottom:0px;
   }
 
-section#inner-page-title-header {
-  padding: 60px 0px;
-}
+
 .trusted-company-img {
   width: 50%;
   text-align: center;
@@ -104,11 +97,7 @@ section#inner-page-title-header {
     width: auto;
     margin: auto !important;
 }
-  section#inner-page-title-header {
-    // padding: 130px 0px;
-    max-height:4200px;
-    height:420px;
-  }
+
 }
 .cta-2-text{
   font-size:35px;
@@ -125,40 +114,12 @@ a {cursor:pointer;}
 
 @media (min-width:768px){
   .nav-top{padding-top:15px;}
-  .bg-hero {
-    height: calc(100vh - 238px);
-    min-height: 609px;
-  }
 }
-.bg-hero {
-  // background-image: url(http://ln2-cabinets.local/wp-content/uploads/2019/03/hero-image@2x.jpg);
-  background-size: cover;
-  background-position: center;
-}
+
 @media (min-width: 700px) {
 
 }
-#hero{
-  color:#fff;
-}
-#hero .container {position:relative;}
-#hero .container, #hero .row {
-  height:100%;
-}
 
-
-#hero h1 {
-  margin-top: 0px;
-  margin-bottom: 20px;
-}
-.hero-title-margin-bottom {
-  margin-bottom: 10px;
-}
-
-
-#hero p {
-  font-size:20px;
-}
 
 
 
@@ -169,12 +130,6 @@ a {cursor:pointer;}
   margin-bottom:50px;
 }
 
-@media (min-width:600px) {
-
-    #how-it-works h2 {
-      font-size: 40px;
-  }
-}
 @media (min-width:768px) {
     #how-it-works .row {
       margin-bottom: 100px;

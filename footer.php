@@ -16,15 +16,29 @@
 
   <section>
     <div class="container">
-      <div class="row justify-content-between py-4">
-        <div class="col-md-4 col-lg-4 col-xl-3 mb-3 mb-md-0 text-center text-md-left">
-          <h5 class="mt-0"><?php echo get_field('footer_column_1_title', 'options'); ?></h5>
+      <div class="row justify-content-between py-4 text-white">
+        <?php
+          if( have_rows('footer_2','options') ):
+            while( have_rows('footer_2','options') ): the_row();
+        ?>
+        <div class="col-md-8 mb-3 mb-md-0 text-center text-md-left">
+          <h3 class="mt-0"><?php the_sub_field('footer_title','options'); ?></h3>
+          <p><?php the_sub_field('footer_text','options'); ?></p>
+            <a class="btn blue" href="<?php the_sub_field('footer_button_link','options'); ?>"><?php the_sub_field('footer_button_text','options'); ?></a>
+
+        </div>
+        <?php
+            endwhile;
+          endif;
+        ?>
+        <div class="col-md-4 mb-3 mb-md-0 text-center text-md-left">
+          <h3 class="mt-0">Contact Us</h3>
           <p class="mb-2"><b>Email Address:</b> <?php echo get_field('company_email_address', 'options');?></p>
           <p class="mb-2"><b>Phone:</b> <?php echo get_field('company_phone_number', 'options');?></p>
           <p class="mb-3"><b>Location:</b><br><?php echo get_field('company_address', 'options');?></p>
         </div>
 
-        <div class="col-md-4 col-lg-4 col-xl-3 mb-3 mb-md-0 text-center text-md-left" style="">
+        <!-- <div class="col-md-4 col-lg-4 col-xl-3 mb-3 mb-md-0 text-center text-md-left" style="">
           <h5 class="mt-0">Navigation</h5>
           <?php echo wp_nav_menu( array('footer1','Footer Column 1')); ?>
         </div>
@@ -64,7 +78,7 @@
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFWSURBVHgB7ZbLbYNAEIYHFG48lA6cDpIS0kE6iFNBcAXQQeIKQgnpwCXE6YASzOMGgvxjQWQhWDyAzGU/aeXFOzuvnWEh0mg0K2OMCeR5/l5VlW8YxoZkHOu63ruuG9FUB9I03cLwF80Azu88z/ukKQ4g+h9E8UgCHMf515llWY0AYtu2H4bkTZUyqfEBHRvVutKBW3BHC8Npl8hPygDSesJ4K8vyns+c5/j7REvD0VxGhPmBn1Gcflc2SZKwkT8M7e9DlIG2oIqiiLpraLdzq0nfF6sXocgBRHc8bzLNbXfNsqxX/kUmfkmAtAv2GC9wIMCZs7GoNY7jCRvnQlqKviLCc1tsfSMc299FXANouxDt94TpN6KOefAc45nXaEmuiWDu/rG7IG4UBSQ3HlzqGEJ5G6LQfBTVB82A35KqbwJlBvgeZwVjUQwYjtG2u7EPEo1Gszp/Xw3nxIvJF/IAAAAASUVORK5CYII=" alt="instagram logo">
             </a>
           </div>
-        </div>
+        </div> -->
 
       </div>
     </div>
@@ -74,7 +88,7 @@
     <div class="container">
       <div class="row align-items-center py-2">
         <div class="col-12 text-center">
-          <p class="mb-0"><?php echo get_field('copyright_text', 'options'); ?></p>
+          <p class="mb-0">Copyright © <?php echo date("Y"); ?> <?php echo get_field('copyright_text', 'options'); ?></p>
         </div>
       </div>
     </div>
@@ -103,8 +117,8 @@
 <!-- Bootstrap JS -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
-<script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- <script>
   $(document).ready(function () {
     // Add smooth scrolling to all links
     $("a").on('click', function (event) {
@@ -129,47 +143,8 @@
       } // End if
     });
   });
-</script>
-<script type="application/ld+json">
-<?php
-$schema = get_field('schema','options');
-?>
-  {
-    "@context": "http://schema.org",
-    "@type": "<?php echo $schema['business_type']; ?>",
-    "image": "<?php echo $schema['business_logo']; ?>",
-    "name": "<?php echo $schema['business_name']; ?>",
-    "telephone": "<?php echo $schema['phone_number']; ?>",
-    "description": "<?php echo $schema['business_description']; ?>",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "<?php echo $schema['city']; ?>",
-      "addressRegion": "<?php echo $schema['state']; ?>",
-      "postalCode": "<?php echo $schema['area_code']; ?>",
-      "streetAddress": "<?php echo $schema['street_address']; ?>"
-    }
-    "priceRange": "<?php echo $schema['price_range']; ?>",
+</script> -->
 
-  }
-</script>
-
-<!-- 
-add this to schema in future
-    "openingHours": "Mo,Tu,We,Th,Fr 09:00-20:00",
-    "sameAs": [
-      "https://www.facebook.com/MUG.GilbertRoad/",
-      "https://plus.google.com/118048240953855032469",
-      "https://www.yelp.com/biz/mens-ultimate-grooming-mug-chandler",
-      "https://www.instagram.com/mughaircuts.gilbert/"
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.3",
-      "bestRating": "5",
-      "worstRating": "1",
-      "ratingCount": "53"
-    }
- -->
 </body>
 
 </html>
