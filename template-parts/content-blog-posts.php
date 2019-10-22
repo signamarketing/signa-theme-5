@@ -4,7 +4,7 @@
         <!-- IMAGE & LINK -->
         <a class="font-weight-bold  text-center" href="<?php the_permalink() ?>">
           <div class="blog-recent-featured-image post-img-box mb-3 micro">
-            <img src="<?php get_post_thumbnail_by_size("medium"); ?>" alt="<?php get_post_thumbnail_alt() ?>">
+            <img src="<?php get_post_thumbnail_by_size("large"); ?>" alt="<?php get_post_thumbnail_alt() ?>">
           </div>
         </a>
         <!-- CATEGORY & LINK -->

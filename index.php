@@ -18,22 +18,23 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php
-			//vars
-			$page_title = get_field('page_title_content');
-		?>
-			<section id="inner-page-title-header" class="d-flex align-items-center page-title-bg page-title" style="position:relative; background-image:url('<?php 
-				echo '/signa-theme-5/wp-content/uploads/2019/08/city-bg.jpg'; ?>')
-			;">
+          if( have_rows('blog_page_settings','options') ):
+            while( have_rows('blog_page_settings','options') ): the_row();
+        ?>
+			<section id="small-hero" class="d-flex align-items-center py-80" style="position:relative; background-image:url('<?php the_sub_field('blog_page_background_image_for_hero_section','options'); ?>');">
 				<div id="bg-filter"></div>
 						<div class="container">
 							<div class="row align-items-center">
 								<div class="col text-center">
-									<h1 class="mt-0 mb-0">News & Events</h1>
-									<p class="mt-0 mb-0">lorem ipsum dolor sit amet consecteur ipsum lorem dolor sit amet consecteur ipsum</p>
+									<h1 class="mt-0 mb-0 text-white"><?php the_sub_field('blog_page_title','options'); ?></h1>   
 								</div>
 							</div>
 						</div>
 			</section>
+			<?php
+					endwhile;
+				endif;
+			?>
 
 			<section class="py-80 pb-60">
 				<div class="container">

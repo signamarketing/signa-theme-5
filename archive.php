@@ -29,7 +29,7 @@ get_header(); ?>
 							<div class="row align-items-center">
 								<div class="col text-center">
 									<h1><?php 	single_cat_title(); ?></h1>
-            			<p class="mt-0 mb-0"><?php echo the_archive_description( '<p class="mt-0 mb-0">', '</p>' ); ?></p>
+            			
 								</div>
 							</div>
 						</div>
