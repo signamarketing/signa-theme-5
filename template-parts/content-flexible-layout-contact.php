@@ -1,13 +1,13 @@
 <?php
 
 // check if the flexible content field has rows of data
-if( have_rows('main_content') ):
+if( have_rows('main_content_copy') ):
 ?>
 
 <?php
 
      // loop through the rows of data
-    while ( have_rows('main_content') ) : the_row();
+    while ( have_rows('main_content_copy') ) : the_row();
 
         if( get_row_layout() == 'text_row' ):
         ?>
@@ -537,51 +537,66 @@ if( have_rows('main_content') ):
           <?php
             elseif( get_row_layout() == 'full_width_text_layout' ): 
           ?>
-          <section class="py-80 <?php
-            if (get_sub_field('add_space_above_full_width') == 'No'){
-              echo "pt-0";
-            }
-            if (get_sub_field('add_space_below_full_width') == 'No'){
-              echo "pb-0";
-            }
-          ?>">
-            <div class="container">
-              <div class="row">
-                <div class="col-12">
-                  <p class="h3 text-blue mt-0 mb-0 font-weight-normal text-center"><?php the_sub_field('text'); ?></p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <?php
-            elseif( get_row_layout() == 'testimonial_card_layout' ): 
-          ?>
-            <section class="contact-form-row py-80 ">
+            <section class="py-80 <?php
+              if (get_sub_field('add_space_above_full_width') == 'No'){
+                echo "pt-0";
+              }
+              if (get_sub_field('add_space_below_full_width') == 'No'){
+                echo "pb-0";
+              }
+            ?>">
               <div class="container">
                 <div class="row">
-                  <div class="offset-md-1 col-md-10 contact-form">
-                    <?php
-                      if( have_rows('testimonial_card') ):
-                        $count = 0;
-                        while( have_rows('testimonial_card') ): the_row();
-                    ?>
-                      <div class="testimonial-card <?php if( get_row_index() % 2 == 0 ){echo "colored-card-bg";}?>">
-                        <h3><?php the_sub_field('card_name');?></h3>  
-                        <p><?php the_sub_field('card_text');?></p>
-                      </div>
-                    <?php
-                    $count++;
-                      endwhile;
-                      endif;
-                    ?>
+                  <div class="col-12">
+                    <p class="h3 text-blue mt-0 mb-0 font-weight-normal text-center"><?php the_sub_field('text'); ?></p>
                   </div>
                 </div>
               </div>
             </section>
 
+          <?php
+            elseif( get_row_layout() == 'contact_form_&_contact_info' ): 
+          ?>
+            <section class="contact-form-row py-80 pt-0">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-7 contact-form">
+                    <div class="col-form-container text-center">
+                      <h2 class="mt-0"><?php the_sub_field('contact_form_title'); ?></h2>
+                    <?php
+                      gravity_form( 1, false, false, false, '', false );
+                    ?>
+                    </div>
 
-          
+                  </div>
+
+                  <div class="col-md-5">
+                  <h2 class="mt-5 mt-md-0">Contact Information</h2>
+                    <p class="mb-2"><b>Email Address:</b> <?php echo get_field('company_email_address', 'options');?></p>
+                    <p class="mb-2"><b>Phone:</b> <?php echo get_field('company_phone_number', 'options');?></p>
+                    <p class="mb-3"><b>Location:</b><br><?php echo get_field('company_address', 'options');?></p>
+                  <?php
+                    if( have_rows('images') ):
+                      while( have_rows('images') ): the_row();
+                  ?>
+                      <div class="image-with-text">
+                        <div class="bg-filter"></div>
+                          <img src="<?php the_sub_field('image'); ?>" alt="">
+                          <p><?php the_sub_field('text'); ?></p>
+                      </div>
+                  <?php
+                      endwhile;
+                    endif;
+                  ?>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+ 
+
+
+
 <?php
 // END OF FLEX LAYOUT ALL NEW LAYOUTS MUST BE ADDED ABOVE THIS LINE
         endif;

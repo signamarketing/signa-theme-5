@@ -21,10 +21,7 @@ get_header(); ?>
     // elseif($hero_sections =='Hero 2'){
     //   get_template_part( 'template-parts/content-hero-2' );
     // }
-
   ?>
-
-  <?php //get_template_part('template-parts/content-homepage-links-under-hero'); ?>
 
   <?php
     get_template_part( 'template-parts/content-flexible-layout-default' )

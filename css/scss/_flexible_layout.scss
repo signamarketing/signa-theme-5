@@ -75,6 +75,13 @@
   p:last-child {
     margin-bottom:0px;
   }
+  a{
+    color:$white;
+    margin-bottom:23px;
+    display:block;
+    text-decoration:underline;
+
+  }
   a:last-child {
     margin-bottom:0px;
   }
@@ -255,4 +262,144 @@ padding-bottom:50px;
   width: 100%;
 }
 
+}
+
+.contact-form-row{
+  .contact-form {
+
+    .col-form-container {
+        background-color: $theme-color-2;
+        padding: 30px 25px 30px;
+
+        h2 {
+          color:$white;
+          margin-bottom: 30px;
+          font-size: 40px;
+          font-style: italic;
+          line-height:1.1;
+        }
+        div#gform_wrapper_1 {
+          width: 100%;
+          max-width: 100%;
+          margin:auto;
+        }
+        .gform_footer {
+          margin-top: 0px !important;
+        }
+        .gform_button {
+          padding: 11px 30px;
+          font-weight: bold;
+          font-size: 30px;
+          letter-spacing: 2px;
+          transition: all .3s;
+          border: none;
+          border-radius: 3px;
+          width: 100%;
+        }
+        .gform_button:hover {
+          text-decoration:none;
+          color:$theme-color-1;
+          background-color: $white;
+        }
+    }
+
+    @media(min-width:768px){
+      .col-form-container {
+        padding: 70px 25px 50px;
+        
+        div#gform_wrapper_1 {
+          width: 90%;
+        }
+
+        h2 {
+          margin-bottom: 70px;
+          font-size: 55px;
+        }
+      }
+    }
+
+    .ginput_container:before {
+      display: none;
+    }
+    ul, li {
+      list-style: none;
+      margin:0px !important;
+      padding:0px !important;
+    }
+    ul li.gfield:first-child {
+      margin-bottom:25px;
+    }
+    ::placeholder {
+      font-weight: 700;
+    }
+    input,textarea {
+      border:0px;
+      border: 0;
+      border-radius: 3px !important;
+      margin-bottom:25px;
+      width:100%;
+      padding: .6rem .6rem!important;
+    }
+    .nf-field-element input {
+      height: 56px !important;
+      padding-left: 20px;
+      font-weight: 700;
+      border-radius: 3px;
+      padding: 3px;
+      margin: 0;
+    }
+  }
+  @media(min-width:768px){
+    input, textarea {
+      padding: 15px 20px 15px!important;
+  
+    }
+  }
+  .image-with-text {
+    position:relative;
+    margin-bottom:25px;
+    max-width: 100%;
+
+    img {
+      width: 100%;
+    }
+
+    p {
+      color:$white;
+      position: absolute;
+      top: 47%;
+      margin: auto;
+      left: 0;
+      right: 0;
+      display: block;
+      color: #fff;
+      font-weight: 700;
+      font-size: 30px;
+      text-align: center;
+    }
+
+
+    }
+    @media(min-width:400px) {
+      .image-with-text {
+        max-width: 396px;
+
+        p{
+          font-size:40px;
+        }
+      }
+
+  }
+  .testimonial-card {
+    padding:25px;
+    border: 1px solid #f3f2f0;
+    margin-bottom:20px;
+    h3 {
+      margin-top:0px;
+      margin-bottom:0px;
+    }
+    &.colored-card-bg {
+      background-color:#f3f2f0;
+    }
+  }
 }
