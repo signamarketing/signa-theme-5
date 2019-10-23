@@ -579,8 +579,8 @@ if( have_rows('main_content_copy') ):
                     if( have_rows('images') ):
                       while( have_rows('images') ): the_row();
                   ?>
-                      <div class="image-with-text">
-                        <div class="bg-filter"></div>
+                      <div class="image-with-text" style="width:396px; max-width:100%;">
+                        <div class="bg-filter-2"></div>
                           <img src="<?php the_sub_field('image'); ?>" alt="">
                           <p><?php the_sub_field('text'); ?></p>
                       </div>
