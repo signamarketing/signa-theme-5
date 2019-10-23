@@ -619,6 +619,7 @@ if( have_rows('main_content') ):
                 </div>
               </div>
             </section>
+
           
 <?php
 // END OF FLEX LAYOUT ALL NEW LAYOUTS MUST BE ADDED ABOVE THIS LINE
@@ -632,3 +633,5 @@ else :
 endif;
 
 ?>
+              <!-- Social Feed -->
+              <?php signa_select_social(); ?>
