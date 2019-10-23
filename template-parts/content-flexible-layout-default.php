@@ -619,8 +619,10 @@ if( have_rows('main_content') ):
                 </div>
               </div>
             </section>
-
-          
+          <?php
+            elseif( get_row_layout() == 'twitter_or_instagram_row' ): 
+          ?>
+            <?php signa_select_social(); ?>
 <?php
 // END OF FLEX LAYOUT ALL NEW LAYOUTS MUST BE ADDED ABOVE THIS LINE
         endif;
@@ -634,4 +636,4 @@ endif;
 
 ?>
               <!-- Social Feed -->
-              <?php signa_select_social(); ?>
+     
