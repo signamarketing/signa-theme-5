@@ -2116,10 +2116,8 @@ section.team-members {
     text-align: center; }
 
 @media (min-width: 400px) {
-  .contact-form-row .image-with-text {
-    max-width: 396px; }
-    .contact-form-row .image-with-text p {
-      font-size: 40px; } }
+  .contact-form-row .image-with-text p {
+    font-size: 40px; } }
 
 .contact-form-row .testimonial-card {
   padding: 25px;
