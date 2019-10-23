@@ -1,5 +1,5 @@
 <?php $instagram_username = get_field('instagram_username', 'instagram'); ?>
-<section class="py-80 pb-60" style="background-color: <?php echo $section_bg_color; ?>;">
+<section class="py-80 pb-60 pt-0" style="background-color: <?php echo $section_bg_color; ?>;">
   <div class="container">
     <div class="row justify-content-center text-center">
       <div class="col-12">
