@@ -582,7 +582,7 @@ if( have_rows('main_content') ):
           <?php
             elseif( get_row_layout() == 'horizontal_form' ): 
           ?>
-            <section class="contact-form-row py-80 pt-0">
+            <section id="form-section" class="contact-form-row py-80 pt-0">
               <div class="container">
                 <div class="row">
                   <div class="col-md-7 contact-form">
