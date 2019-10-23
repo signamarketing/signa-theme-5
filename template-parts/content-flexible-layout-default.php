@@ -579,8 +579,46 @@ if( have_rows('main_content') ):
                 </div>
               </div>
             </section>
+          <?php
+            elseif( get_row_layout() == 'horizontal_form' ): 
+          ?>
+            <section class="contact-form-row py-80 pt-0">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-7 contact-form">
+                    <div class="col-form-container text-center">
+                      <h2 class="mt-0"><?php the_sub_field('contact_form_title'); ?></h2>
+                    <?php
+                      gravity_form( 1, false, false, false, '', false );
+                    ?>
+                    </div>
 
+                  </div>
 
+                  <div class="col-md-5">
+                  <?php
+                    if( have_rows('images_with_text') ):
+                      while( have_rows('images_with_text') ): the_row();
+                  ?>
+                      <div class="image-with-text">
+                        <div class="bg-filter-2"></div>
+                          <?php
+                            $imageWithText = get_sub_field('image');
+                            $url = $imageWithText['url'];
+                            $alt = $imageWithText['alt'];
+                          ?>
+                          <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>">
+                        
+                          <p><?php the_sub_field('image_text'); ?></p>
+                      </div>
+                  <?php
+                      endwhile;
+                    endif;
+                  ?>
+                  </div>
+                </div>
+              </div>
+            </section>
           
 <?php
 // END OF FLEX LAYOUT ALL NEW LAYOUTS MUST BE ADDED ABOVE THIS LINE

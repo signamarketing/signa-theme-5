@@ -1,6 +1,7 @@
 
-<section id="small-hero" class="d-flex align-items-center py-80" style="position:relative; background-image:url('<?php the_field('background_image'); ?>');">
-  <div id="bg-filter"></div>
+<section id="hero" class="d-flex align-items-center py-80" style="position:relative; background-image:url('<?php the_field('background_image'); ?>');">
+<!-- REMOVE THIS COMMENT TO ADD A FILTER TO THE HEADER -->
+  <!-- <div class="bg-filter"></div> -->
       <div class="container">
         <div class="row align-items-center">
           <div class="col text-center">
