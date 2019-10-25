@@ -486,7 +486,7 @@ if( have_rows('main_content') ):
             <section class="wave-row py-80 bg-img" style="background-image:url('<?php echo $bg_img; ?>');">
               <?php
                 if (get_sub_field('add_wave_above') == 'Yes'){
-                  echo '<img class="top-wave" alt="top-wave" src="<?php echo get_site_url();?>/wp-content/uploads/2019/10/inner-page-wave@2x-2.png">';
+                  echo '<img class="top-wave" alt="top-wave" src="'.get_site_url().'/wp-content/uploads/2019/10/inner-page-wave@2x-2.png">';
                 }
               ?>
               <div class="bg-filter"></div>
@@ -529,7 +529,7 @@ if( have_rows('main_content') ):
               </div>
               <?php
                 if (get_sub_field('add_wave_below') == 'Yes'){
-                  echo '<img class="bottom-wave" alt="top-wave" src="<?php echo get_site_url();?>/wp-content/uploads/2019/10/inner-page-wave@2x-2.png">';
+                  echo '<img class="bottom-wave" alt="top-wave" src="'.get_site_url().'/wp-content/uploads/2019/10/inner-page-wave@2x-2.png">';
                 }
               ?>
             </section>
