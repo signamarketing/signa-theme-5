@@ -1183,6 +1183,9 @@ div#footer-social-icons a {
 div#footer-social-icons a:last-child {
   margin-right: 0; }
 
+.gform_body .gfield_label {
+  display: none !important; }
+
 #instafetch {
   width: 100%;
   padding: 50px 0px;
