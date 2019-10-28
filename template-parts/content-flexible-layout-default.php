@@ -595,7 +595,7 @@ if( have_rows('main_content') ):
 
                   </div>
 
-                  <div class="col-md-5">
+                  <div class="col-md-5 mt-4 mt-md-0">
                   <?php
                     if( have_rows('images_with_text') ):
                       while( have_rows('images_with_text') ): the_row();
