@@ -105,7 +105,7 @@ if( have_rows('main_content') ):
                     ?>
                     <div class="carousel-item <?php if ($count==0) {echo "active"; } ?>">
                       <div class="">
-                        <p class="card-text">“<?php the_sub_field('testimonial_text'); ?>”</p>
+                        <p class="card-text px-3 px-sm-0">“<?php the_sub_field('testimonial_text'); ?>”</p>
                         <h4 class="card-title font-weight-normal mb-0">- <?php the_sub_field('name'); ?></h4>
                       </div>
                     </div>
