@@ -773,9 +773,9 @@ div#intro-paragraph p:last-child {
 
 #signaToolbar {
   background: #1e425d;
-  color: white; }
+  color: #fff; }
   #signaToolbar a {
-    color: white;
+    color: #fff;
     text-decoration: underline; }
 
 #navigation-top {
@@ -998,7 +998,7 @@ button#open-nav {
     text-align: center;
     padding-bottom: 22px; }
   .brand {
-    color: black; }
+    color: #101820; }
     .brand img {
       width: 175px;
       margin-top: 20px; }

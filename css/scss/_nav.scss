@@ -9,19 +9,19 @@
 // Signa Toolbar 
 #signaToolbar {
   background: #1e425d;
-  color: white;
+  color: $white;
 
   a {
-    color: white;
+    color: $white;
     text-decoration: underline;
   }
 }
 
 #navigation-top {
   width: 100%;
-  background-color: #fff;
+  background-color: $white;
   padding: 15px;
-  border-top: 3px solid $blue;
+  border-top: 3px solid $theme-color-1;
 }
 
 @media(min-width: 992px) {
@@ -46,7 +46,7 @@
     width: 17px;
     height: 17px;
     border-radius: 3px;
-    background: #fff;
+    background: $white;
     -webkit-transform-origin: center center;
     transform-origin: center center;
     -webkit-transform: translate(-50%, 0) rotate(45deg);
@@ -63,7 +63,7 @@
     width: 17px;
     height: 17px;
     border-radius: 3px;
-    background: #fff;
+    background: $white;
     -webkit-transform-origin: center center;
     transform-origin: center center;
     -webkit-transform: translate(-50%, 0) rotate(45deg);
@@ -82,7 +82,7 @@
     left: 0;
     padding: 10px 0px;
     list-style: none;
-    background: #fff;
+    background: $white;
     width: 295px;
     text-align: center;
     border: 1px solid $dark-gray;
@@ -313,7 +313,7 @@ button#open-nav {
 
 
   .brand {
-    color: black;
+    color: $black;
 
     img {
       width: 175px;
