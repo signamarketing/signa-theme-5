@@ -385,13 +385,13 @@ body {
   font-family: 'Montserrat' !important; }
 
 h1, .h1 {
-  font-size: 50px;
+  font-size: 45px;
   line-height: 50px;
   margin-top: 23px;
   margin-bottom: 23px; }
 
 h2, .h2 {
-  font-size: 40px;
+  font-size: 35px;
   line-height: 40px;
   margin-top: 23px;
   margin-bottom: 21px; }
@@ -412,6 +412,32 @@ h5, .h5 {
   line-height: 23px;
   margin-top: 23px;
   margin-bottom: 10px; }
+
+@media (min-width: 768px) {
+  h1, .h1 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-top: 23px;
+    margin-bottom: 23px; }
+  h2, .h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 23px;
+    margin-bottom: 21px; }
+  h3, .h3 {
+    font-size: 24px;
+    margin-top: 23px;
+    margin-bottom: 23px; }
+  h4, .h4 {
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 23px;
+    margin-bottom: 10px; }
+  h5, .h5 {
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 23px;
+    margin-bottom: 10px; } }
 
 p, ul, ol, pre, table, blockquote {
   margin-top: 0px;
@@ -1581,9 +1607,13 @@ div#footer-social-icons a:last-child {
     min-height: 134px; }
 
 .mid-page-cta a {
-  font-size: 30px;
+  font-size: 28px;
   align-items: center;
   display: inline-flex; }
+
+@media (min-width: 768px) {
+  .mid-page-cta a {
+    font-size: 30px; } }
 
 .mid-page-cta .phone-icon {
   margin-right: 8px; }
@@ -1627,7 +1657,7 @@ div#footer-social-icons a:last-child {
     width: 30px;
     margin-right: 8px; }
   .two-column-cta a {
-    font-size: 30px;
+    font-size: 28px;
     align-items: center;
     display: inline-flex; }
   .two-column-cta.theme-color {
@@ -1644,6 +1674,9 @@ div#footer-social-icons a:last-child {
     .two-column-cta.white a {
       color: #fff;
       background-color: #0088c5; }
+  @media (min-width: 768px) {
+    .two-column-cta a {
+      font-size: 30px; } }
 
 .company-logos-section .company-logo-title {
   margin-bottom: 33px; }

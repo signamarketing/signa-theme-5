@@ -45,13 +45,13 @@ body{
   font-family: 'Montserrat' !important;
 }
 h1, .h1 {
-  font-size: 50px;
+  font-size: 45px;
   line-height: 50px;
   margin-top: 23px;
   margin-bottom: 23px;
 }
 h2, .h2 {
-  font-size: 40px;
+  font-size: 35px;
   line-height: 40px;
   margin-top: 23px;
   margin-bottom: 21px;
@@ -74,6 +74,44 @@ h5, .h5 {
   margin-top: 23px;
   margin-bottom: 10px;
 }
+
+@media(min-width:768px){
+  h1, .h1 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+  }
+  h2, .h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 23px;
+    margin-bottom: 21px;
+  }
+  h3, .h3 {
+    font-size: 24px;
+    // line-height: 41px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+  }
+  h4, .h4 {
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 23px;
+    margin-bottom: 10px;
+  }
+  h5, .h5 {
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 23px;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+
 p, ul, ol, pre, table, blockquote {
   margin-top: 0px;
   margin-bottom: 23px;

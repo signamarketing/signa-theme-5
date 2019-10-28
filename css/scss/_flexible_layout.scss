@@ -36,11 +36,15 @@
 
 .mid-page-cta{
   a{
-    font-size:30px;
+    font-size:28px;
     align-items: center;
     display: inline-flex;
   }
-
+  @media(min-width:768px){
+    a{
+      font-size:30px;
+    }
+  }
   .phone-icon {
     margin-right: 8px;
   }
@@ -99,7 +103,7 @@
   }
 
   a{
-    font-size:30px;
+    font-size:28px;
     align-items: center;
     display: inline-flex;
   }
@@ -128,7 +132,9 @@
     }
 
   }
-
+  @media(min-width:768px){
+    a{font-size:30px;}
+  }
 }
 
 .company-logos-section {
