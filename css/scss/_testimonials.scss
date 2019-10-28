@@ -20,19 +20,22 @@
 .carousel-indicators .active {
   background-color: #101820;
   opacity: 1; }
-
-.carousel-control-next, .carousel-control-prev {
-  top: 32px; }
+  .carousel-control-next, .carousel-control-prev {
+    top: 0px; }
+@media(min-width:768px){
+  .carousel-control-next, .carousel-control-prev {
+    top: 0px; }
+}
 
 .carousel-control-prev {
   justify-content: start;
   padding-left: 10px;
-  left: 20px; }
+  left: -10px; }
 
 .carousel-control-next {
   justify-content: flex-end;
   padding-right: 10px;
-  right: 20px; }
+  right: -10px; }
 
 .carousel-control-prev-icon {
   background-image: url('/signa-theme-5/wp-content/uploads/2019/10/white-chevron-arrow-left.png'); }
