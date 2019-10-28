@@ -734,49 +734,6 @@ a.vp-load-more:hover {
     margin: auto;
     width: 56px; } }
 
-.carousel-inner {
-  padding-bottom: 20px; }
-
-.carousel-item {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto; }
-
-.carousel-indicators {
-  bottom: 0px;
-  position: relative;
-  margin-top: 20px; }
-
-.carousel-indicators li {
-  background-color: #101820;
-  opacity: .3; }
-
-.carousel-indicators .active {
-  background-color: #101820;
-  opacity: 1; }
-
-.carousel-control-next, .carousel-control-prev {
-  top: 32px; }
-
-.carousel-control-prev {
-  justify-content: start;
-  padding-left: 10px;
-  left: 20px; }
-
-.carousel-control-next {
-  justify-content: flex-end;
-  padding-right: 10px;
-  right: 20px; }
-
-.carousel-control-prev-icon {
-  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"%3E%3Cpath d="M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z"/%3E%3C/svg%3E'); }
-
-.carousel-control-next-icon {
-  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"%3E%3Cpath d="M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z"/%3E%3C/svg%3E');
-  fill: #101820 !important; }
-
 div#intro-paragraph p:last-child {
   margin-bottom: 0px; }
 
@@ -1222,11 +1179,8 @@ div#neil-logo {
   display: none; }
 
 #main-contact-form form .gform_footer.top_label > input {
-  background-color: #309958;
   padding: .6rem 1rem;
   font-size: 18px;
-  color: #fff;
-  border: #278049 3px solid;
   text-transform: uppercase;
   font-weight: 700;
   white-space: normal; }
@@ -1263,66 +1217,6 @@ body .gform_wrapper ul li.gfield:first-child {
 
 .gform_wrapper textarea.large {
   height: 145px !important; }
-
-ul.service-list {
-  list-style-type: none; }
-
-ul.service-list li {
-  font-weight: 700;
-  font-size: 16px;
-  list-style: none;
-  line-height: 1.4;
-  position: relative; }
-
-ul.service-list > li div.services-fbox {
-  display: flex; }
-
-ul.service-list > li div.services-fbox > div:nth-child(1) {
-  white-space: initial; }
-
-@media (min-width: 992px) {
-  ul.service-list > li div.services-fbox > div:nth-child(1) {
-    white-space: nowrap; } }
-
-@media (max-width: 992px) {
-  ul.service-list > li div.services-fbox > div:nth-child(1) {
-    min-width: 150px; } }
-
-ul.service-list {
-  padding-left: 5px; }
-
-ul.service-list li h4 {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.4;
-  margin: 0; }
-
-.service-list li span.orange-text {
-  font-size: 20px;
-  color: #f7941d; }
-
-ul.service-list > li div.services-fbox > div:nth-child(2) {
-  width: 100%;
-  padding: 0px 15px; }
-
-ul.service-list > li div.services-fbox > div:nth-child(2) span {
-  border-bottom: 2px dotted #101820;
-  width: 100%;
-  display: inline-block;
-  height: 21px; }
-
-ul.service-list > li div.services-fbox > div:nth-child(3) span {
-  font-size: 20px; }
-
-.service-description {
-  margin-bottom: 50px; }
-
-.service-description > p {
-  font-size: 18px;
-  text-transform: initial;
-  font-weight: 400;
-  font-style: italic;
-  padding-left: 20px; }
 
 #footer {
   background-color: #2b2b2b;
@@ -1364,98 +1258,6 @@ div#footer-social-icons a {
 
 div#footer-social-icons a:last-child {
   margin-right: 0; }
-
-.intro-block {
-  position: relative;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
-  -webkit-box-shadow: 0 0 18px rgba(0, 0, 0, 0.03);
-  box-shadow: 0 0 18px rgba(0, 0, 0, 0.03);
-  box-sizing: border-box;
-  transition: 225ms;
-  overflow: hidden;
-  display: block;
-  background-color: #fff; }
-
-.intro-block .block-text {
-  overflow: hidden;
-  padding: 33px 26px 20px 150px; }
-
-.block-icon {
-  display: flex;
-  position: relative; }
-
-.block-icon img {
-  width: 35px;
-  position: absolute;
-  /* top: 0px; */
-  bottom: 0px;
-  left: 0px; }
-
-.intro-block .block-text h3 {
-  text-transform: uppercase;
-  font-size: 24px;
-  margin-bottom: 0px;
-  line-height: 1; }
-
-a.intro-block {
-  text-decoration: none;
-  color: inherit;
-  transition: color .3s;
-  outline: none; }
-
-.intro-block .block-text p:nth-child(2) {
-  overflow: hidden;
-  margin-top: 16px;
-  font-size: 18px; }
-
-.intro-block .block-text p.read-more {
-  color: #0088c5;
-  font-size: 16px; }
-
-.intro-block:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
-
-.intro-block:hover h3 {
-  color: initial; }
-
-.intro-block:hover p:nth-child(2) {
-  color: initial; }
-
-.services-section-mb {
-  margin-bottom: 50px; }
-
-.image-block .block-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 130px;
-  height: 100%;
-  background-size: cover;
-  background-position: center center; }
-
-@media (min-width: 786px) {
-  .intro-block {
-    margin-bottom: 30px; }
-  .image-block .block-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 30%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center; }
-  .intro-block .block-text {
-    overflow: hidden;
-    padding: 33px 26px 20px 33%; }
-  .intro-block .block-text p:nth-child(2) {
-    min-height: 90px; } }
-
-.trusted-company-title {
-  font-size: 24px;
-  font-weight: bold; }
 
 #instafetch {
   width: 100%;
@@ -1732,32 +1534,6 @@ a.intro-block {
 .single section#inner-page-title-header {
   background-position: center; }
 
-section.team-members {
-  padding-top: 60px;
-  padding-bottom: 35px; }
-
-.team-member-title-wrapper {
-  border: 1px solid #8e8e8e;
-  padding: 22px;
-  margin-top: -75px;
-  position: relative;
-  z-index: 1;
-  background: #Fff; }
-
-.team-member-wrapper {
-  width: 239px;
-  max-width: 100%;
-  margin: auto; }
-
-.team-member-title-wrapper p {
-  font-size: 24px;
-  font-weight: bold; }
-
-.team-member-title-wrapper span {
-  font-size: 16px;
-  margin-top: 2px;
-  display: block; }
-
 .gallery .row {
   padding-left: 10px;
   padding-right: 10px; }
@@ -1947,7 +1723,7 @@ section.team-members {
     margin-bottom: 30px; }
   .coupons-section .coupon {
     color: #0088c5;
-    border: 5px dashed #007CC0;
+    border: 5px dashed #0088c5;
     padding: 25px 1px 40px;
     height: 100%;
     position: relative; }

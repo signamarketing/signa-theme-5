@@ -44,11 +44,11 @@
   content: "" !important;
   display: none;}
 #main-contact-form form .gform_footer.top_label > input {
-  background-color: #309958;
+  // background-color: $theme-color-1;
   padding: .6rem 1rem;
   font-size: 18px;
-  color: #fff;
-  border: #278049 3px solid;
+  // color: $white;
+  // border: $theme-color-1 3px solid;
   text-transform: uppercase;
   font-weight: 700;
   white-space: normal;
