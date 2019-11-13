@@ -213,128 +213,6 @@ get_header('stylesheet'); ?>
   </nav>
 </section>
 
-
-
-<section class="styleguide">
-  <div class="container">
-    <h2>Homepage Hero Section 1</h2>
-  </div>
-  <section id="hero" class="bg-hero padding-hero py-5 py-md-3" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/signa-banner.jpg')">
-    <div class="container">
-      <div class="row flex-wrap align-content-center align-items-center text-center">
-        <div class="col-12 text-center hero-title-margin-bottom">
-          <h1>Lorem Ipsum</h1>
-          <p class="font-italic mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-        </div>
-        <div id="hero-list-items" class="d-flex">
-          <div class="col-12 col-sm-6 text-left d-flex flex-column align-items-center">
-            <p class="hero-list-item">Lorem Ipsum Dolor</p>
-            <p class="hero-list-item">Lorem Ipsum Dolor</p>
-          </div>
-          <div class="col-12 col-sm-6 text-left d-flex flex-column align-items-center">
-            <p class="hero-list-item">Lorem Ipsum Dolor</p>
-            <p class="hero-list-item">Lorem Ipsum Dolor</p>
-          </div>
-        </div>
-        <div class="col-12">
-          <a href="/gallery" class="btn orange btn-lg clear-btn-orange font-weight-bold">call to action</a>
-        </div>
-      </div>
-      <a class="scroll-link" alt="scroll link" href="#homepage-under-hero-links"><img alt="down-arrow" src="/wp-content/themes/signa-theme-5/img/arrow-down@2x-min.png"/></a>
-    </div>
-  </section>
-</section>
-
-<section class="styleguide">
-  <div class="container">
-    <h2>Homepage Hero Section 2</h2>
-  </div>
-  <section id="hero" class="bg-hero padding-hero py-5 py-md-3" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/signa-banner.jpg')">
-    <div class="container">
-      <div class="row flex-wrap align-content-center align-items-center text-center">
-        <div class="col-12 col-md-6 text-center text-md-left mb-4 mb-md-0 hero-title-margin-bottom">
-          <h1 class="mb-3">Lorem Ipsum</h1>
-          <p class="font-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-          <button href="/gallery" class="btn orange font-weight-bold">call to action</button>
-        </div>
-        <div class="col-12 col-md-6 text-center hero-title-margin-bottom">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/Layer-2.jpg">
-        </div>
-      </div>
-    </div>
-  </section>
-</section>
-
-<section class="styleguide">
-  <div class="container">
-    <h2>Homepage Content - 3 Column</h2>
-  </div>
-  <section id="how-it-works" class="">
-    <div class="container">
-      <h2 class="text-center mt-0">Title</h2>
-      <div class="row d-flex align-content-center text-left">
-        <div class="col-md-4 mb-3 mb-md-0 text-center">
-          <div style="height:230px;">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/Layer-2-icon.jpg">
-          </div>
-          <h3>icon</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-          <button href="/gallery" class="btn dark-blue font-weight-bold circular">pill button</button>
-        </div>
-        <div class="col-md-4 mb-3 mb-md-0 text-center">
-          <img style="max-height:230px" src="<?php echo get_template_directory_uri(); ?>/img/Layer-2-circle.jpg">
-          <h3>circle</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-          <button href="/gallery" class="btn dark-blue font-weight-bold circular">pill button</button>
-        </div>
-        <div class="col-md-4 mb-3 mb-md-0 text-center">
-          <img style="max-height:230px" src="<?php echo get_template_directory_uri(); ?>/img/Layer-2.jpg">
-          <h3>square</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-          <button href="/gallery" class="btn dark-blue font-weight-bold circular">pill button</button>
-        </div>
-      </div>
-    </div>
-  </section>
-</section>
-
-<section class="styleguide">
-  <div class="container">
-    <h2>Homepage Content - Staggered</h2>
-  </div>
-  <section id="how-it-works" class="">
-    <div class="container">
-      <h2 class="text-center mt-0">Title</h2>
-      <div class="row d-flex align-content-center text-left">
-        <div class="col-md-6 mb-3 mb-md-0 text-center">
-          <img class="rounded" src="<?php echo get_template_directory_uri(); ?>/img/Layer-2.jpg">
-        </div>
-        <div class="col-md-6 text-center text-md-left">
-          <h3>Lorem</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-          <button href="/gallery" class="btn dark-blue font-weight-bold circular">pill button</button>
-        </div>
-      </div>
-      <div class="row d-flex align-content-center text-left">
-        <div class="col-md-6 text-center text-md-left">
-          <h3>Lorem</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-          <button href="/gallery" class="btn dark-blue font-weight-bold circular">pill button</button>
-        </div>
-        <div class="col-md-6 mb-3 mb-md-0 text-center">
-          <img class="rounded" src="<?php echo get_template_directory_uri(); ?>/img/Layer-2.jpg">
-        </div>
-      </div>
-    </div>
-  </section>
-</section>
-
-
-
-
-
-
-
 <section class="styleguide">
   <div class="container">
     <div class="row">
@@ -389,7 +267,7 @@ get_header('stylesheet'); ?>
     <h2>CTA section with background image</h2>
   </div>
   <section id="view-gallery"
-    style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/signa-banner.jpg');">
+    style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/testimonial-background-image-1024x270.jpg');">
     <div class="container">
       <div class="row text-center py-5">
         <div class="col-12 align-items-center justify-content-center text-center">
