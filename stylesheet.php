@@ -267,7 +267,7 @@ get_header('stylesheet'); ?>
     <h2>CTA section with background image</h2>
   </div>
   <section id=""
-    style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/testimonial-background-image-1024x270.jpg');">
+    style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/testimonial-background-image-1024x270.jpg'); background-size:cover; background-repeat:no-repeat;">
     <div id="bg-filter"></div>
     <div class="container">
       <div class="row text-center py-80">
@@ -280,21 +280,7 @@ get_header('stylesheet'); ?>
   </section>
 </section>
 
-<section >
-  <div class="container">
-    <h2>CTA section with background color</h2>
-  </div>
-  <section id="view-gallery" style="background-color:#454545;">
-    <div class="container">
-      <div class="row text-center py-80">
-        <div class="col-12 align-items-center justify-content-center text-center">
-        <h3 class="h2 mt-0">CTA Text Goes Here</h3>
-          <a href="<?php echo get_template_directory_uri(); ?>/gallery" class="btn white btn-xl" alt="cabinet gallery link">CTA Button</a>
-        </div>
-      </div>
-    </div>
-  </section>
-</section>
+<section class="py-80 two-column-cta theme-color"><div class="container"><div class="row d-flex align-items-center"><div class="col-12 text-center mb-3"><h3 class="h2 mt-0 my-lg-0">Ask Us About Our Specials!</h3></div><div class="col-12 text-center"> <a class="btn white sharp btn-cta" href="tel:123-456-7890"><">Call (123) 456-7890</a></div></div></div></section>
 
 
 </div>
