@@ -263,15 +263,17 @@ get_header('stylesheet'); ?>
 </section>
 
 <section class="styleguide">
+<div id="bg-filter"></div>
   <div class="container">
     <h2>CTA section with background image</h2>
   </div>
-  <section id="view-gallery"
+  <section id=""
     style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/testimonial-background-image-1024x270.jpg');">
     <div class="container">
-      <div class="row text-center py-5">
+      <div class="row text-center py-80">
         <div class="col-12 align-items-center justify-content-center text-center">
-          <a href="/gallery" class="btn white btn-xl" alt="cabinet gallery link">CTA Button</a>
+          <h3 class="h2 mt-0">CTA Text Goes Here</h3>
+          <a href="<?php echo get_template_directory_uri(); ?>/gallery" class="btn white btn-xl" alt="cabinet gallery link">CTA Button</a>
         </div>
       </div>
     </div>
@@ -284,9 +286,10 @@ get_header('stylesheet'); ?>
   </div>
   <section id="view-gallery" style="background-color:#454545;">
     <div class="container">
-      <div class="row text-center py-5">
+      <div class="row text-center py-80">
         <div class="col-12 align-items-center justify-content-center text-center">
-          <a href="/gallery" class="btn white btn-xl" alt="cabinet gallery link">CTA Button</a>
+        <h3 class="h2 mt-0">CTA Text Goes Here</h3>
+          <a href="<?php echo get_template_directory_uri(); ?>/gallery" class="btn white btn-xl" alt="cabinet gallery link">CTA Button</a>
         </div>
       </div>
     </div>
