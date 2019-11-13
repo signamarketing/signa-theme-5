@@ -263,12 +263,12 @@ get_header('stylesheet'); ?>
 </section>
 
 <section class="styleguide">
-<div id="bg-filter"></div>
   <div class="container">
     <h2>CTA section with background image</h2>
   </div>
   <section id=""
     style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/testimonial-background-image-1024x270.jpg');">
+    <div id="bg-filter"></div>
     <div class="container">
       <div class="row text-center py-80">
         <div class="col-12 align-items-center justify-content-center text-center">
