@@ -71,7 +71,7 @@ get_header('stylesheet'); ?>
     <div class="row align-items-center">
       <div class="col">
         <h1><?php the_title(); ?></h1>
-        <a class="mb-2 pt-0 stylesheet-go-back-to-site text-white" href="/"> <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-left.png">Go back to site preview</a>
+        <a class="mb-2 pt-0 stylesheet-go-back-to-site text-white" href="<?php echo get_site_url(); ?>"> <img src="<?php echo get_template_directory_uri(); ?>/img/arrow-left.png">Go back to site preview</a>
       </div>
     </div>
   </div>
