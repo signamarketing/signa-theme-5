@@ -80,7 +80,20 @@ get_header('stylesheet'); ?>
 
 
 
-
+<style>
+ul#navigation-top li {
+    padding: 0 3%;
+}
+li#menu-item-469 a {
+    color: #fff !important;
+}
+li#menu-item-469 {
+    background-color: #0088c5;
+    /* color: #fff !important; */
+    padding: 10px 15px;
+    border-radius: 50px !important;
+}
+</style>
 <section class="styleguide" style="">
 <div class="container">
   <h2>Header with CTA</h2>
@@ -114,15 +127,6 @@ get_header('stylesheet'); ?>
               );
               wp_nav_menu($args);
             ?>
-          </div>
-        </div>
-        <!-- Free Estimate -->
-        <div class="nav-cta">
-          <div>
-            <a class="p-2" href="tel:<?php echo get_field('navbar_phone_number', 'options'); ?>" alt="call for free estimate">
-              <p>FREE ESTIMATE</p>
-              <span><?php echo get_field('navbar_phone_number', 'options'); ?></span>
-            </a>
           </div>
         </div>
       </div>
