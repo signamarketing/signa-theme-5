@@ -98,7 +98,7 @@ li#menu-item-469 {
     padding: 10px 15px !important;
     border-radius: 50px !important;
 }
-li#menu-item-469:hover {
+li#menu-item-469:hover a {
   background-color: #0088c5;
 }
 </style>
