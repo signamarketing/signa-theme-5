@@ -532,3 +532,14 @@ div#neil-logo {
 }
 
 
+
+@media(min-width:1090px){
+  ul#navigation-top {
+    display: flex;
+    justify-content: space-between;
+    width: 690px;
+  }
+  ul#navigation-top li {
+      padding: 0px;
+  }
+}

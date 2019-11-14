@@ -81,14 +81,17 @@ get_header('stylesheet'); ?>
 
 
 <style>
-ul#navigation-top {
+@media(min-width:1090px){
+  ul#navigation-top {
     display: flex;
     justify-content: space-between;
     width: 690px;
+  }
+  ul#navigation-top li {
+      padding: 0px;
+  }
 }
-ul#navigation-top li {
-    padding: 0px;
-}
+
 li#menu-item-469 a {
     color: #fff !important;
 }
