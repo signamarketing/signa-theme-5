@@ -104,6 +104,9 @@ li#menu-item-469 {
 li#menu-item-469:hover a {
   background-color: #0088c5;
 }
+.nav-collapse .nav-top ul.nav li a:hover {
+  background: unset;
+}
 </style>
 <section class="styleguide" style="">
 <div class="container">
