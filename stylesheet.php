@@ -81,6 +81,11 @@ get_header('stylesheet'); ?>
 
 
 <style>
+ul#navigation-top {
+    display: flex;
+    justify-content: space-between;
+    width: 690px;
+}
 ul#navigation-top li {
     padding: 0 3%;
 }
@@ -90,8 +95,11 @@ li#menu-item-469 a {
 li#menu-item-469 {
     background-color: #0088c5;
     /* color: #fff !important; */
-    padding: 10px 15px;
+    padding: 10px 15px !important;
     border-radius: 50px !important;
+}
+li#menu-item-469:hover {
+  background-color: #0088c5;
 }
 </style>
 <section class="styleguide" style="">
