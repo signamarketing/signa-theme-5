@@ -87,7 +87,7 @@ ul#navigation-top {
     width: 690px;
 }
 ul#navigation-top li {
-    padding: 0 3%;
+    padding: 0px;
 }
 li#menu-item-469 a {
     color: #fff !important;
