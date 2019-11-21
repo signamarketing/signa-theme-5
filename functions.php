@@ -278,9 +278,9 @@ add_filter('excerpt_more', 'new_excerpt_more');
 function my_login_logo() { ?>
   <style type="text/css">
     #login h1 a, .login h1 a {
-      background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/logo.jpg);
-      padding-bottom: 0px;
-      width: 50%;
+      background-image: url('https://www.signamarketing.com/wp-content/uploads/Signa-logo-amp_03-e1574376005383.jpg');
+      padding-bottom: 30px;
+      width: 100%;
       background-size: contain;
     }
     body.login {
