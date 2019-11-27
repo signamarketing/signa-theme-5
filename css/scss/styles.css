@@ -794,6 +794,14 @@ div#intro-paragraph p:last-child {
 .navbar {
   background: #fff; }
 
+.fixed {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 999;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
+
 .navbar.fullwidth {
   padding: 0.9rem 1rem; }
 

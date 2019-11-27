@@ -53,10 +53,10 @@
       $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
     
-        if (scroll >= 500) {
-            $(".site-header").addClass("fixed");
+        if (scroll >= 63) {
+          $(".site-header").addClass("fixed");
         } else {
-            $(".site-header").removeClass("fixed");
+          $(".site-header").removeClass("fixed");
         }
       });
     },
