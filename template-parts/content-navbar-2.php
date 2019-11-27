@@ -35,6 +35,12 @@
       </div>
     </nav>
   </div>
+
+  <?php if(is_singular('post')): ?>
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+  <?php endif; ?>
 </header>
 
 
