@@ -1507,6 +1507,18 @@ div#footer-social-icons a:last-child {
 .single section#inner-page-title-header {
   background-position: center; }
 
+.progress-container {
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  top: 106px;
+  z-index: 9999; }
+  .progress-container .progress-bar {
+    width: 0%;
+    height: 5px;
+    background: #cc8b48;
+    z-index: 9999; }
+
 .gallery .row {
   padding-left: 10px;
   padding-right: 10px; }
