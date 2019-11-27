@@ -24,6 +24,17 @@
   <link href="https://fonts.googleapis.com/css?family=Kalam:700|Montserrat:400,700&display=swap" rel="stylesheet">
   <?php wp_head(); ?>
 
+  <?php 
+    //vars
+    $theme_primary = get_field('theme_primary', 'options');
+  ?>
+
+  <style>
+    .progress-bar {
+      background: <?php echo $theme_primary; ?> !important;
+    }
+  </style>
+
 </head>
 
 <body <?php body_class(); ?>>
