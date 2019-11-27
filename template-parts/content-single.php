@@ -48,7 +48,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
  
   <section class="py-5 ">
-    <div class="container single-post">
+    <div class="container single-post blog-entry-content">
 
       <div class="row pb-5">
         <div class="col-12">

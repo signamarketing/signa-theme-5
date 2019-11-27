@@ -30,6 +30,9 @@
 									?>
                 </div>
           </div>
+          <div>
+            <p class="reading-time"></p>
+          </div>
         </div>
       </div>
 </section>
