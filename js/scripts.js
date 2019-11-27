@@ -3,6 +3,7 @@
     init() {
       this.bindEvents();
       this.startupKit();
+      this.stickyHeader();
     },
 
     bindEvents() {
@@ -47,6 +48,19 @@
         }, 400);
       });
     },
+
+    stickyHeader() {
+      $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+        if (scroll >= 500) {
+            $(".site-header").addClass("fixed");
+        } else {
+            $(".site-header").removeClass("fixed");
+        }
+      });
+    },
+
   };
 
   Scripts.init();

@@ -1,4 +1,4 @@
-<header class="site-header fixed <?php if(is_front_page()){ echo 'home-page'; } ?>">
+<header class="site-header <?php if(is_front_page()){ echo 'home-page'; } ?>">
   <div id="top-nav" class="top-nav">
     <nav class="navbar" role="navigation">
       <div class="container">
