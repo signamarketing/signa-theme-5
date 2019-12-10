@@ -574,7 +574,7 @@ if( have_rows('main_content_copy') ):
                   <h2 class="mt-5 mt-md-0">Contact Information</h2>
                     <p class="mb-2"><b>Email Address:</b> <?php echo get_field('company_email_address', 'options');?></p>
                     <p class="mb-2"><b>Phone:</b> <?php echo get_field('company_phone_number', 'options');?></p>
-                    <p class="mb-3"><b>Location:</b><br><?php echo get_field('company_address', 'options');?></p>
+                    <p class="mb-3"><b>Location:</b><?php echo get_field('company_address', 'options');?></p>
                   <?php
                     if( have_rows('images') ):
                       while( have_rows('images') ): the_row();
