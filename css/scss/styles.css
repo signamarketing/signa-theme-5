@@ -1440,10 +1440,9 @@ div#footer-social-icons a:last-child {
 
 #testimonials div#carouselExampleIndicators {
   width: 100%;
-  min-height: 161px; }
+  min-height: 190px; }
 
 #testimonials .carousel-item {
-  width: 806px;
   max-width: 100%;
   margin: auto; }
 
