@@ -16,7 +16,7 @@
 
   <section>
     <div class="container">
-      <div class="row justify-content-between py-4 text-white">
+      <div class="row justify-content-between py-4 text-white flex-column-reverse flex-md-row">
         <?php
           if( have_rows('footer_2','options') ):
             while( have_rows('footer_2','options') ): the_row();
@@ -35,7 +35,7 @@
           <h3 class="mt-0">Contact Us</h3>
           <p class="mb-2"><b>Email Address:</b> <?php echo get_field('company_email_address', 'options');?></p>
           <p class="mb-2"><b>Phone:</b> <?php echo get_field('company_phone_number', 'options');?></p>
-          <p class="mb-3"><b>Location:</b><br><?php echo get_field('company_address', 'options');?></p>
+          <p class="mb-3"><b>Location:</b><?php echo get_field('company_address', 'options');?></p>
         </div>
 
       </div>
