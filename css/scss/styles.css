@@ -1443,6 +1443,7 @@ div#footer-social-icons a:last-child {
   min-height: 190px; }
 
 #testimonials .carousel-item {
+  padding: 0 35px;
   max-width: 100%;
   margin: auto; }
 
