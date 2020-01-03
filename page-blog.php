@@ -69,6 +69,32 @@ get_header(); ?>
 				</div>
 			</section>
 
+			<!-- Newsletter -->
+			<div class="test">
+				<?php
+					wp_reset_query();
+
+					$enable_nl = get_field('enable_newsletter_cta');
+					if($enable_nl):
+					
+					$newsletter_options = get_field('newsletter_options');
+				?>
+
+					<section class="py-80 bg-blue" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('<?php echo $newsletter_options['cta_background_image']; ?>') !important; background-size: cover !important; background-position: center;">
+						<div class="container">
+							<div class="row text-center">
+								<div class="col-12 align-items-center justify-content-center text-center">
+									<h3 class="h2 font-weight-bold mt-0 text-white"><?php echo $newsletter_options['cta_title']; ?></h3>
+									<button data-toggle="modal" data-target="#subscribeModal" class="btn blue" alt="mailchimp subscription newsletter"><?php echo $newsletter_options['cta_button_phrase']; ?></button>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<?php get_template_part('template-parts') ?>
+
+				<?php endif; ?>
+			</div>
 
 			<!-- Social Feed -->
       <?php signa_select_social(); ?>
