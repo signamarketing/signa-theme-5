@@ -103,5 +103,5 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+get_template_part('template-parts/content-mailchimp', 'content-mailchimp');
 get_footer();
