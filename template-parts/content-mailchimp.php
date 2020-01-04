@@ -7,7 +7,7 @@
     <div class="modal-content">
 
       <div id="mc_embed_signup">
-        <form action="<?php echo get_field('mailchimp_action_url'); ?>" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <form action="<?php echo $newsletter_options['mailchimp_action_url']; ?>" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           <div id="mc_embed_signup_scroll">
 
             <div class="modal-header">
