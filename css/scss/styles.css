@@ -1256,6 +1256,10 @@ div#footer-social-icons a:last-child {
   #subscribeModal .modal-footer .clear {
     width: 100%; }
 
+#subscribeModal #mc_embed_signup div#mce-responses {
+  width: 100% !important;
+  margin: 0 !important; }
+
 #subscribeModal #mc_embed_signup div.response {
   width: 100%;
   padding: 0px !important; }
