@@ -1253,8 +1253,12 @@ div#footer-social-icons a:last-child {
 #subscribeModal .modal-footer {
   justify-content: center;
   padding-top: 0px !important; }
-  #subscribeModal .modal-footer #mc_embed_signup .clear {
+  #subscribeModal .modal-footer .clear {
     width: 100%; }
+
+#subscribeModal #mc_embed_signup div.response {
+  width: 100%;
+  padding: 0px !important; }
 
 #subscribeModal #mc-embedded-subscribe {
   margin: 0px !important;

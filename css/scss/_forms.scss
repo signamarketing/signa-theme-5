@@ -31,10 +31,16 @@
         justify-content: center;
         padding-top: 0px !important;
 
-        #mc_embed_signup .clear {
+        .clear {
             width:100%;
         }
     }
+
+    #mc_embed_signup div.response {
+        width: 100%;
+        padding: 0px !important;
+    }
+
     #mc-embedded-subscribe {
         margin:0px !important;
         clear: both;
