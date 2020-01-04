@@ -1228,6 +1228,57 @@ div#footer-social-icons a:last-child {
 .gform_body .gfield_label {
   display: none !important; }
 
+#subscribeModal .modal-header, #subscribeModal .modal-footer {
+  border: none !important; }
+
+#subscribeModal #mc_embed_signup form {
+  padding: 0px !important; }
+
+#subscribeModal #mc_embed_signup .mc-field-group {
+  width: 100% !important; }
+
+#subscribeModal #mc_embed_signup .mc-field-group input {
+  padding: 11px 0 !important; }
+
+#subscribeModal .modal-header {
+  padding-bottom: 0px !important;
+  padding-top: 0px !important; }
+  #subscribeModal .modal-header .close {
+    padding: 1rem;
+    margin: -.5rem -1rem -1rem auto !important; }
+
+#subscribeModal .modal-body {
+  padding-bottom: 0px !important; }
+
+#subscribeModal .modal-footer {
+  justify-content: center;
+  padding-top: 0px !important; }
+  #subscribeModal .modal-footer #mc_embed_signup .clear {
+    width: 100%; }
+
+#subscribeModal #mc-embedded-subscribe {
+  margin: 0px !important;
+  clear: both;
+  width: auto;
+  margin: auto;
+  text-align: center;
+  display: block;
+  /* margin: 1em 0 1em 5%; */
+  background-color: #0088c5;
+  color: #fff;
+  padding: 9px 23px;
+  border: 0;
+  min-width: 200px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-weight: 700 !important;
+  width: 100%;
+  max-width: 100%; }
+
 #instafetch {
   width: 100%;
   padding: 50px 0px;

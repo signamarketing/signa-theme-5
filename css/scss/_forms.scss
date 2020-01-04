@@ -1,3 +1,62 @@
 .gform_body .gfield_label {
     display: none !important;
 }
+
+// mailchimp modal forms
+#subscribeModal{
+    .modal-header, .modal-footer {
+        border: none !important;
+    }
+    #mc_embed_signup form{
+        padding:0px !important;
+    }
+    #mc_embed_signup .mc-field-group {
+        width:100% !important;
+    }
+    #mc_embed_signup .mc-field-group input {
+        padding: 11px 0 !important;
+    }
+    .modal-header {
+        padding-bottom: 0px !important;
+        padding-top: 0px !important;
+        .close {
+            padding: 1rem;
+            margin: -.5rem -1rem -1rem auto !important;
+        }
+    }
+    .modal-body {
+        padding-bottom: 0px !important;
+    }
+    .modal-footer {
+        justify-content: center;
+        padding-top: 0px !important;
+
+        #mc_embed_signup .clear {
+            width:100%;
+        }
+    }
+    #mc-embedded-subscribe {
+        margin:0px !important;
+        clear: both;
+        width: auto;
+        margin: auto;
+        text-align: center;
+        display: block;
+        /* margin: 1em 0 1em 5%; */
+        background-color: #0088c5;
+        color: #fff;
+        padding: 9px 23px;
+        border: 0;
+        min-width: 200px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        text-align: center;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        font-weight: 700!important;
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
