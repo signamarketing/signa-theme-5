@@ -10,7 +10,25 @@ $hero = get_field('hero_section');
 ?>
 
 <section id="hero" class="tall-hero hero-1 d-flex align-items-center" style="background-image:url('<?php echo $hero['hero_background_image']; ?>')">
-<div id="bg-filter"></div>
+  <!-- Desktop Video -->
+  <?php 
+    if ($hero_bg['hero_background_video']){
+        if(!is_mobile_device()){
+  ?>
+  <div class="banner-video">
+    <div class="homepage-video-container">
+
+        <video muted autoplay loop class="homepage-video">
+          <source src="<?php echo $hero_bg['hero_background_video']; ?>" type="video/mp4">
+        </video>
+
+    </div>
+  </div>
+  <?php 
+      }
+    }
+  ?>
+  <div id="bg-filter"></div>
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
