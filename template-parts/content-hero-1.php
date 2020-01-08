@@ -7,9 +7,10 @@
 
 //vars
 $hero = get_field('hero_section');
+$hero_bg = $hero['hero_background'];
 ?>
 
-<section id="hero" class="tall-hero hero-1 d-flex align-items-center" style="background-image:url('<?php echo $hero['hero_background_image']; ?>')">
+<section id="hero" class="tall-hero hero-1 d-flex align-items-center" style="background-image:url('<?php echo $hero_bg['hero_background_image']; ?>')">
   <!-- Desktop Video -->
   <?php 
     if ($hero_bg['hero_background_video']){
