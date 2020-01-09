@@ -1228,6 +1228,10 @@ div#footer-social-icons a:last-child {
 .gform_body .gfield_label {
   display: none !important; }
 
+#subscribeModal .modal-dialog {
+  width: 330px;
+  max-width: 100%; }
+
 #subscribeModal .modal-header, #subscribeModal .modal-footer {
   border: none !important; }
 

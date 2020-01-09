@@ -4,6 +4,10 @@
 
 // mailchimp modal forms
 #subscribeModal{
+    .modal-dialog {
+        width: 330px;
+        max-width: 100%;
+    }
     .modal-header, .modal-footer {
         border: none !important;
     }
