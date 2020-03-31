@@ -1364,12 +1364,17 @@ div#footer-social-icons a:last-child {
   background-color: rgba(119, 133, 157, 0.5); }
 
 .banner-video {
+  display: none;
   z-index: 0;
   overflow: hidden; }
 
 video {
   display: inline-block;
   vertical-align: baseline; }
+
+@media (min-width: 768px) {
+  .banner-video {
+    display: block; } }
 
 .btn {
   white-space: normal; }
