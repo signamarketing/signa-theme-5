@@ -19,7 +19,7 @@ $hero_bg = $hero['hero_background'];
   <div class="banner-video">
     <div class="homepage-video-container">
 
-        <video muted autoplay loop class="homepage-video">
+        <video muted autoplay loop class="homepage-video" style="width:100%;">
           <source src="<?php echo $hero_bg['hero_background_video']; ?>" type="video/mp4">
         </video>
 
