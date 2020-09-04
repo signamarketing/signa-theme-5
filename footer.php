@@ -57,7 +57,7 @@
 
 
     <!-- Instagram Feed -->
-    <script type="text/javascript" src="/signa-theme-1/wp-content/themes/signa-theme-5/js/instafeed.js"></script>
+    <script type="text/javascript" src="/signa-theme-5/wp-content/themes/signa-theme-5/js/instafeed.js"></script>
 
 <?php wp_footer(); ?>
 
