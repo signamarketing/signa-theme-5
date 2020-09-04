@@ -4,6 +4,7 @@
       this.bindEvents();
       this.startupKit();
       this.stickyHeader();
+      this.instafeed();
     },
 
     bindEvents() {
@@ -32,6 +33,14 @@
       $(".navbar").find('.nav-collapse').show();
       $(".navbar").addClass('nav-visible');
       $('html').addClass('nav-visible');
+    },
+
+    instafeed(){
+      var feed = new Instafeed({
+        accessToken: 'IGQVJWbGc3dnV2djhfWE5kU3lRWDFEMWNCeEFUOEs4Vk44S1VlMm1OMzBMTVNxdVFWTmowTUtpeU9QX3RIX1NYNjNTVU0xSzRWWEw3ekdGWHhTREZAVSjA1Y19ka2V4cHJYM3VJVjdwWlh5a2t2a2l1QQZDZD',
+        limit: 5
+      });
+      feed.run();
     },
 
     equalHeight() {

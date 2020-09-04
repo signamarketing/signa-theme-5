@@ -56,17 +56,8 @@
 </div><!-- #page -->
 
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/instafetch.js/1.5.0/instafetch.min.js"></script>
-<script defer>
-  //instagram setup
-  var my_access_token = '<?php echo get_field('access_token', 'instagram'); ?>';
-  instafetch.init({
-    accessToken: my_access_token,
-    target: 'instafetch',
-    numOfPics: 4,
-    caption: false
-  });
-</script>
+    <!-- Instagram Feed -->
+    <script type="text/javascript" src="/signa-theme-1/wp-content/themes/starter1-theme/js/instafeed.js"></script>
 
 <?php wp_footer(); ?>
 

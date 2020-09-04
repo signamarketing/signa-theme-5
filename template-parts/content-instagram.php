@@ -10,7 +10,7 @@
     <div class="row" data-aos="fade-up">
       <div class="col">
         <!-- Feed Container -->
-        <div id="instafetch"></div>
+        <div id="instafeed"></div>
       </div>
     </div>
 

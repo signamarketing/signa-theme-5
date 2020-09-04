@@ -5,8 +5,8 @@
 
 
 
-//instafetch grid
-#instafetch {
+//instafeed grid
+#instafeed {
   width: 100%;
   padding: 50px 0px;
   display: flex;
@@ -39,10 +39,9 @@
     }
   }
 }
-
-//instafetch mobile 
+//instafeed mobile 
 @media(max-width: 768px) {
-  #instafetch {
+  #instafeed {
     display: block;
     padding: 50px 0px;
 

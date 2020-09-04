@@ -1291,24 +1291,24 @@ div#footer-social-icons a:last-child {
   width: 100%;
   max-width: 100%; }
 
-#instafetch {
+#instafeed {
   width: 100%;
   padding: 50px 0px;
   display: flex; }
-  #instafetch article {
+  #instafeed article {
     display: inline-block;
     vertical-align: top;
     flex-grow: 1;
     margin-right: 25px; }
-    #instafetch article:last-of-type {
+    #instafeed article:last-of-type {
       margin-right: 0px; }
-    #instafetch article figure {
+    #instafeed article figure {
       position: relative;
       width: 100%;
       padding-top: 100%;
       overflow: hidden;
       margin: 0px; }
-      #instafetch article figure img {
+      #instafeed article figure img {
         position: absolute;
         top: 0;
         left: 0;
@@ -1317,10 +1317,10 @@ div#footer-social-icons a:last-child {
         object-fit: cover; }
 
 @media (max-width: 768px) {
-  #instafetch {
+  #instafeed {
     display: block;
     padding: 50px 0px; }
-    #instafetch article {
+    #instafeed article {
       display: initial; } }
 
 #bg-filter {
