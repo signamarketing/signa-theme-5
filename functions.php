@@ -144,15 +144,7 @@ if( function_exists('acf_add_options_page') ) {
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false
   ));
-  
-  acf_add_options_page(array(
-		'page_title' 	=> 'Developer Settings',
-		'menu_title'	=> 'Developer Settings',
-		'menu_slug' 	=> 'deverloper-settings',
-		'capability'	=> 'edit_posts',
-		'redirect'		=> false
-  ));
-  
+
   acf_add_options_page(array(
 		'page_title' 	=> 'Company Settings',
 		'menu_title'	=> 'Company Settings',

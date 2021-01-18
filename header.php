@@ -14,7 +14,7 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-  <?php echo get_field('insert_scripts_after_opening_head_tag', 'options'); ?>
+  <?php echo get_field('insert_scripts_just_after_head', 'options'); ?>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -35,11 +35,11 @@
       background: <?php echo $theme_primary; ?> !important;
     }
   </style>
-  <?php echo get_field('insert_scripts_before_closing_head_tag', 'options'); ?>
+  <?php echo get_field('insert_scripts_just_before_body', 'options'); ?>
 </head>
 
 <body <?php body_class(); ?>>
-  <?php echo get_field('insert_scripts_after_body_tag', 'options'); ?>
+  <?php echo get_field('insert_scripts_just_after_body', 'options'); ?>
   <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'start-theme' ); ?></a>
     <!-- Top Bar - Text & CTA -->
